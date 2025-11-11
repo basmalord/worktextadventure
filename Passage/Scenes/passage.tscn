@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://ot7pjbh1rhyw"]
+
+[ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
+
+[node name="Passage" type="CanvasLayer"]
+script = ExtResource("1_y57or")
+passage_json_file_location = "res://JSON Files/test.txt"
+passage_json_files_folder = "res://JSON Files/"
+
+[node name="OutputBox" type="RichTextLabel" parent="."]
+offset_left = 32.0
+offset_top = 338.0
+offset_right = 1151.0
+offset_bottom = 454.0
+text = "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+fit_content = true
+
+[node name="InputBox" type="LineEdit" parent="."]
+offset_left = 548.0
+offset_top = 505.0
+offset_right = 616.563
+offset_bottom = 536.0
+max_length = 10
+
+[node name="Visuals" type="VideoStreamPlayer" parent="."]
+offset_left = 535.0
+offset_top = 186.0
+offset_right = 575.0
+offset_bottom = 226.0
+
+[connection signal="text_submitted" from="InputBox" to="." method="_on_input_box_text_submitted"]

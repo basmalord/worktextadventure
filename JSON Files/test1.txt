@@ -1,0 +1,13 @@
+{
+"passage_name": "test1",
+"visual_name": "video_typing",
+"passage_text": "This is a test1. Would you like to continue?",
+"inputs": {
+"yes": {
+"passage_name": "test2"
+},
+"no": {
+"passage_name": "test"
+}
+}
+}

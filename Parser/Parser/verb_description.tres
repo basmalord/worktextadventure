@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://b708gujyvokkv"]
+
+[ext_resource type="Script" uid="uid://cv8p06ql6pkt" path="res://Parser/verb_description.gd" id="1_w87ml"]
+
+[resource]
+script = ExtResource("1_w87ml")

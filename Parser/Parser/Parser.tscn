@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://imicq4m7cpbb"]
+
+[ext_resource type="Script" uid="uid://bg84kfq4jutfs" path="res://Parser/Parser/parser.gd" id="1_enh3r"]
+
+[node name="TextParser" type="Node"]
+script = ExtResource("1_enh3r")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_right = 68.5625
+offset_bottom = 31.0
+expand_to_text_length = true
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_player_text_received"]
