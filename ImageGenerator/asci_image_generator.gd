@@ -2,9 +2,9 @@ extends Node2D
 class_name ASCIImageGenerator
 
 @export var visual_location: String
-@export_range(0,400,1) var max_character_width: int = 120
-@export var image_name: String
-
+@export_range(0,400,1) var max_character_width: int = 120 #controls the "resolution" of the outputted ASCII
+@export var image_name: String #is given to the file that is saved in the Images folder
+@export_range(0,12,1) var blank_space_detailing = 7 #controls the amount of pixels taken up by blank space
 var visual_resource
 var visual_node
 
@@ -44,7 +44,11 @@ func generate_visual_node(visual_resource: Resource):
 		print("ERROR IN GENERATING VISUAL NODE: VISUAL RESOURCE LOADED FROM FILEPATH IS NEITHER VIDEO OR IMAGE")
 
 
-func image_to_asci(path: String, char_list := "Ñ@#W$9876543210?!abc;:+=-,._          "):
+func image_to_asci(path: String, char_list := "Ñ@#W$9876543210?!abc;:+=-,._"):
+	var blank_space: String
+	for n in blank_space_detailing:
+		blank_space += " ".repeat(n)
+	char_list = char_list + blank_space
 	char_list = char_list.reverse()
 	var asci_text: String = "" #alaways initialise a string
 	var img := Image.new()

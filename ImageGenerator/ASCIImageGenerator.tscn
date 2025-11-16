@@ -5,5 +5,6 @@
 [node name="ASCIImageGenerator" type="Node2D"]
 script = ExtResource("1_j12sc")
 visual_location = "res://Images/Taj.jpeg"
-max_character_width = 50
-image_name = "bootros"
+max_character_width = 100
+image_name = "blanktest3"
+blank_space_detailing = 5
