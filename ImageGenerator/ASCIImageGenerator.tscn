@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgonitho2ky6q"]
+
+[ext_resource type="Script" uid="uid://dco758fv8bwsl" path="res://ImageGenerator/asci_image_generator.gd" id="1_j12sc"]
+
+[node name="ASCIImageGenerator" type="Node2D"]
+script = ExtResource("1_j12sc")
+visual_location = "res://Images/Taj.jpeg"
+max_character_width = 50
+image_name = "bootros"
