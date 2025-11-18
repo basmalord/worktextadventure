@@ -42,3 +42,4 @@ func _on_input_box_text_submitted(player_input_text: String) -> void: #This fire
 	if input_strings.find(player_input_text.to_lower()) != -1: #This checks whether the text inputted by the player matches any of the inputs associated with the passage.
 		passage_json_file_location = passage_json_files_folder + valid_inputs[player_input_text]["passage_name"] + ".txt"
 		load_passage()
+	print(player_input_text)
