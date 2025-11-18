@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdc48adan4r4r"]
+[gd_scene load_steps=3 format=3 uid="uid://cdc48adan4r4r"]
 
+[ext_resource type="Script" uid="uid://cpwy6y4vgws5u" path="res://WordGrid/word_button_grid.gd" id="1_0jfsl"]
 [ext_resource type="Script" uid="uid://c2r8r2o6iun2f" path="res://WordGrid/Word/word_button.gd" id="1_y8ttd"]
 
 [node name="WordGrid" type="Control"]
@@ -13,6 +14,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 columns = 3
+script = ExtResource("1_0jfsl")
 
 [node name="WordButton" type="Button" parent="GridContainer"]
 layout_mode = 2
