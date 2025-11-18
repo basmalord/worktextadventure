@@ -31,8 +31,11 @@ func _on_pressed() -> void:
 	var passage = get_tree().get_first_node_in_group("Passage")
 	passage._on_input_box_text_submitted(word)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	print("Worked")
 =======
+=======
+>>>>>>> Stashed changes
 	passage._on_input_box_text_submitted(word)#
 	get_parent().set_word_usage(self)
 	print("Worked")
@@ -45,4 +48,7 @@ func set_transparency_based_on_usage():
 	var c = get_theme_color("font_color")
 	c.a = c.a * float(usage / 10.0)
 	add_theme_color_override("font_color", c)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
