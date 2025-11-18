@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkun3ln7gloup"]
+
+[ext_resource type="Script" uid="uid://c2r8r2o6iun2f" path="res://WordGrid/Word/word_button.gd" id="1_fpgs5"]
+
+[node name="WordButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+action_mode = 0
+alignment = 0
+autowrap_mode = 2
+script = ExtResource("1_fpgs5")

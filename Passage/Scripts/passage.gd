@@ -35,6 +35,7 @@ func load_passage(): #This loads the json file associated with the passage we wa
 
 func _on_input_box_text_submitted(player_input_text: String) -> void: #This fires when the input box is selected by the player and they hit 'ENTER'.
 	if player_input_text == "": #This checks whether the text inputted is empty
+		print("ERROR: EMPTY TEXT INPUT")
 		return
 	if valid_inputs == {}: #This checks whether the passage the player is on has valid inputs.
 		print("ERROR: NO VALID INPUTS DETECTED IN PASSAGE")

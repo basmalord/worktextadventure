@@ -106,3 +106,13 @@ func save_ascii_to_file(path: String, content: String) -> void:
 		return
 	file.store_string(content)
 	file.close()
+
+#func call_ffmpeg_to_generate_video_frames():
+	#var ffmpeg_path = "/usr/bin/ffmpeg"  # Linux example
+	#OS.execute(ffmpeg_path, [
+		#"-framerate", "4",
+		#"-i", ProjectSettings.globalize_path("res://frames/frame_%04d.png"),
+		#"-c:v", "libx264",
+		#"-pix_fmt", "yuv420p",
+		#ProjectSettings.globalize_path("res://output.mp4")
+	#], true)

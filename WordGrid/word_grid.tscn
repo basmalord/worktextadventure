@@ -1,0 +1,69 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdc48adan4r4r"]
+
+[ext_resource type="Script" uid="uid://c2r8r2o6iun2f" path="res://WordGrid/Word/word_button.gd" id="1_y8ttd"]
+
+[node name="WordGrid" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 3
+
+[node name="WordButton" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Ethics"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton2" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Environment"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton3" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Profit"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton4" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Success"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton5" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Relax"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton6" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Compassion"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton7" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Realism"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton8" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Dedication"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="WordButton9" type="Button" parent="GridContainer"]
+layout_mode = 2
+script = ExtResource("1_y8ttd")
+word = "Enthusiasm"
+metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
