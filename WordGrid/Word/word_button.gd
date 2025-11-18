@@ -29,4 +29,10 @@ func _on_pressed() -> void:
 		print("ERROR: NO PASSAGE NODE IN SCENE")
 		return
 	var passage = get_tree().get_first_node_in_group("Passage")
+<<<<<<< Updated upstream
 	passage._on_input_box_text_submitted(word)
+=======
+	passage._on_input_box_text_submitted(word)#
+	get_parent().set_word_usage(self)
+	print("Worked")
+>>>>>>> Stashed changes
