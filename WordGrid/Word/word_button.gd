@@ -11,7 +11,7 @@ class_name WordButton
 "Profit",
 "Environment",
 "Ethics",
-"Relax") var word: String = "Default"
+"Relaxation") var word: String = "Default"
 @export var usage: int = 10
 
 func _ready():
@@ -30,10 +30,8 @@ func _on_pressed() -> void:
 		return
 	var passage = get_tree().get_first_node_in_group("Passage")
 	passage._on_input_box_text_submitted(word)
-	print("Worked")
-	passage._on_input_box_text_submitted(word)#
 	get_parent().set_word_usage(self)
-	print("Worked")
+
 
 func update_usage(amount: int):
 	usage += amount

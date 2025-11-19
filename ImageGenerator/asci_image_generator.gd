@@ -5,12 +5,17 @@ class_name ASCIImageGenerator
 @export_range(0,400,1) var max_character_width: int = 120 #controls the "resolution" of the outputted ASCII
 @export var image_name: String #is given to the file that is saved in the Images folder
 @export_range(0,12,1) var blank_space_detailing = 7 #controls the amount of pixels taken up by blank space
+@export var output_folder_location: String = "res://Images/"
+@export var is_video: bool = false
 var visual_resource
 var visual_node
+var frame: int = 0
 
 func _ready():
 	image_to_asci(visual_location)
-	print(get_character_w_and_h("res://Fonts/courier-mon.ttf", 16))
+
+
+
 
 func get_character_w_and_h(font_path: String, size: int):
 	var font = load(font_path)
@@ -35,17 +40,21 @@ func generate_visual_node(visual_resource: Resource):
 		visual_node = Sprite2D.new()
 		add_child(visual_node)
 		visual_node.texture = visual_resource
+		return visual_node
 	elif visual_resource is VideoStream:
 		visual_node = VideoStreamPlayer.new()
 		add_child(visual_node)
 		visual_node.stream = visual_resource
 		visual_node.play()
+		return visual_node
 	else:
 		print("ERROR IN GENERATING VISUAL NODE: VISUAL RESOURCE LOADED FROM FILEPATH IS NEITHER VIDEO OR IMAGE")
+		return null
 
 
-func image_to_asci(path: String, char_list := "Ñ@#W$9876543210?!abc;:+=-,._"):
-	var blank_space: String
+
+func image_to_asci(path: String, op_folder: String = output_folder_location, char_list := "Ñ@#W$9876543210?!abc;:+=-,._"):
+	var blank_space: String = ""
 	for n in blank_space_detailing:
 		blank_space += " ".repeat(n)
 	char_list = char_list + blank_space
@@ -62,6 +71,8 @@ func image_to_asci(path: String, char_list := "Ñ@#W$9876543210?!abc;:+=-,._"):
 	var ratio = get_character_w_and_h("res://Fonts/courier-mon.ttf", 16)[0] / get_character_w_and_h("res://Fonts/courier-mon.ttf", 16)[1]
 	var new_h = new_w * ratio
 	img.resize(new_w, new_h, Image.INTERPOLATE_BILINEAR)
+	if is_video:
+		img.flip_y()
 	for y in range(new_h):
 		for x in range(new_w):
 			var c = img.get_pixel(x,y)
@@ -90,9 +101,16 @@ func image_to_asci(path: String, char_list := "Ñ@#W$9876543210?!abc;:+=-,._"):
 	viewport_for_asci_to_image.transparent_bg = false
 	viewport_for_asci_to_image.add_child(label)
 	await RenderingServer.frame_post_draw
+	if is_video:
+		viewport_for_asci_to_image.get_texture().get_image().flip_y()
 	var output_image = viewport_for_asci_to_image.get_texture().get_image()
-	var file_name = image_name + ".png"
-	if output_image.save_png("res://Images/" + file_name):
+	var file_name
+	if !is_video:
+		file_name = image_name + ".png"
+	else:
+		file_name = "frame" + "000" + str(frame) + ".png"
+		frame += 1
+	if output_image.save_png(op_folder + file_name):
 		print("Saved ASCI IMAGE")
 	else:
 		print("ERROR IN SAVING ACII IMAGE")
@@ -106,13 +124,3 @@ func save_ascii_to_file(path: String, content: String) -> void:
 		return
 	file.store_string(content)
 	file.close()
-
-#func call_ffmpeg_to_generate_video_frames():
-	#var ffmpeg_path = "/usr/bin/ffmpeg"  # Linux example
-	#OS.execute(ffmpeg_path, [
-		#"-framerate", "4",
-		#"-i", ProjectSettings.globalize_path("res://frames/frame_%04d.png"),
-		#"-c:v", "libx264",
-		#"-pix_fmt", "yuv420p",
-		#ProjectSettings.globalize_path("res://output.mp4")
-	#], true)

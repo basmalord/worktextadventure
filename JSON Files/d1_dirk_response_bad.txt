@@ -1,0 +1,40 @@
+{
+"passage_name": "d1_dirk_response_bad",
+"visual_name": "",
+"passage_text": "'That's what I like to hear! So, first thing I need from you is just to make a start on signing some documents off. No need to worry about the specifics of them too much, we just need your oversight in order to tick off our sustainability targets.'
+He dumps a pile of papers on your desk.
+'Also, keep an eye on your emails - the building contractor is going to want to get in contact with you. I'll see you around.
+
+What is your approach?
+
+",
+"inputs": {
+"ethics": {
+"passage_name": "d1_disapprove"
+},
+"environment": {
+"passage_name": "d1_disapprove"
+},
+"success": {
+"passage_name": "d1_approve"
+},
+"relaxation": {
+"passage_name": "d1_approve"
+},
+"compassion": {
+"passage_name": "d1_approve"
+},
+"realism": {
+"passage_name": "d1_disapprove"
+},
+"dedication": {
+"passage_name": "d1_disapprove"
+},
+"enthusiasm": {
+"passage_name": "d1_approve"
+},
+"profit": {
+"passage_name": "d1_approve"
+},
+}
+}

@@ -1,0 +1,44 @@
+{
+"passage_name": "d1_wake_up",
+"visual_name": "",
+"passage_text": "You wake up next to your sleeping spouse.
+There is a letter on your dresser:
+Welcome to NewVision! What you need to know about your new position in our family.
+Director Of Environmental and Sustainability Compliance for the Gumpton Dawdley Data Center. 
+To meet growing concern in the field of environmental protection and sustainable practices we 
+have established new targets for our Gumpton Dawdley Data Centre Project. That is why we have 
+brought you in to overlook all matters relating to the Data Center and ensuring we meet those targets.
+We hope you can make a difference at NewVision!
+
+How do you approach your morning?"
+,
+"inputs": {
+"ethics": {
+"passage_name": "d1_arrive_late"
+},
+"environment": {
+"passage_name": "d1_arrive_ot"
+},
+"success": {
+"passage_name": "d1_arrive_early"
+},
+"relaxation": {
+"passage_name": "d1_arrive_late"
+},
+"compassion": {
+"passage_name": "d1_arrive_late"
+},
+"realism": {
+"passage_name": "d1_arrive_ot"
+},
+"dedication": {
+"passage_name": "d1_arrive_early"
+},
+"enthusiasm": {
+"passage_name": "d1_arrive_early"
+},
+"profit": {
+"passage_name": "d1_arrive_early"
+},
+}
+}

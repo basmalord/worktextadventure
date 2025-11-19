@@ -43,7 +43,7 @@ metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 [node name="WordButton5" type="Button" parent="GridContainer"]
 layout_mode = 2
 script = ExtResource("1_y8ttd")
-word = "Relax"
+word = "Relaxation"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="WordButton6" type="Button" parent="GridContainer"]

@@ -1,0 +1,54 @@
+{
+"passage_name": "d1_arrive_late",
+"visual_name": "",
+"passage_text": "You take your time and leave late.
+
+You listen to the news as you drive to work:
+'NewVision announces new environmental goals in response to increasing protests!'
+
+You make it to work. Someone meets you at the front desk and takes you to your desk.
+She says she is Dirk’s assistant.
+
+Dirk’s an old friend who recommended the job. He’s the project manager and was quite
+enthusiastic about this Data Centre last time you spoke.
+
+You spend a while settling in and signing in to all the systems before Dirk comes to 
+your desk, 
+'Hey mate, it's great to see you! I'm so glad corporate decided to hire you,
+you're just the person I need for this role! Can I count on your 100% commitment
+to getting this project over the line?'
+
+How do you respond?
+
+"
+,
+"inputs": {
+"ethics": {
+"passage_name": "d1_dirk_response_bad"
+},
+"environment": {
+"passage_name": "d1_dirk_response_bad"
+},
+"success": {
+"passage_name": "d1_drik_response_good"
+},
+"relaxation": {
+"passage_name": "d1_drik_response_good"
+},
+"compassion": {
+"passage_name": "d1_dirk_response_bad"
+},
+"realism": {
+"passage_name": "d1_dirk_response_bad"
+},
+"dedication": {
+"passage_name": "d1_drik_response_good"
+},
+"enthusiasm": {
+"passage_name": "d1_drik_response_good"
+},
+"profit": {
+"passage_name": "d1_drik_response_good"
+},
+}
+}

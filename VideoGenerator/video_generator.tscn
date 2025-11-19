@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://w63oxjiw83lg"]
+
+[ext_resource type="Script" uid="uid://cpw20cbt8fe7k" path="res://VideoGenerator/video_generator.gd" id="1_pxhot"]
+
+[node name="ASCIIVideoGenerator" type="Node2D"]
+script = ExtResource("1_pxhot")
+frames_folder_path = "res://Video/test4/"
+frames_folder_absolute_path = "C:/Users/theob/Documents/worktextadventure/Video/test4/"
+visual_location = "C:/Users/theob/Documents/worktextadventure/Video/widescreentest.ogv"
+max_character_width = 50
+image_name = "testinghard"
+output_folder_location = "res://Video/test4/"
+is_video = true
+metadata/_custom_type_script = "uid://dco758fv8bwsl"

@@ -1,0 +1,42 @@
+{
+"passage_name": "approve",
+"visual_name": "",
+"passage_text": "You skim through the documents and approve them all. An email arrives at your computer:
+Subject: Building Site Environmental Consultation
+Hello,
+This is Harold. I’m in charge of the building site. Corporate have starting bugging me about environmental concerns. I’ve been told you’ll be helping me with that. So I’ll be relying on you to keep any of this out of my hair. With any luck this project might get through with no hiccups
+Best, Harold
+
+How do you reply?
+
+",
+"inputs": {
+"ethics": {
+"passage_name": ""
+},
+"environment": {
+"passage_name": ""
+},
+"success": {
+"passage_name": ""
+},
+"relaxation": {
+"passage_name": ""
+},
+"compassion": {
+"passage_name": ""
+},
+"realism": {
+"passage_name": ""
+},
+"dedication": {
+"passage_name": ""
+},
+"enthusiasm": {
+"passage_name": ""
+},
+"profit": {
+"passage_name": ""
+},
+}
+}
