@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://qc1d7uofxo0l"]
+
+[ext_resource type="Script" uid="uid://b03qqm27ogvut" path="res://ManagerNodes/ReputationManager/reputation_manager.gd" id="1_3jf4y"]
+
+[node name="ReputationManager" type="Node"]
+script = ExtResource("1_3jf4y")
+reputation_type_dictionary = Dictionary[String, int]({
+"Family": 0,
+"Manager": 0
+})

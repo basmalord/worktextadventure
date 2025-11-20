@@ -1,7 +1,18 @@
 {
 "passage_name": "template",
 "visual_name": "",
-"passage_text": "template",
+"passage_text": {
+"parts": {
+"conditions": {
+"reputation": {
+"manager": 0
+}
+"progress": 0
+"continue": 0
+}
+"text"
+} "template",
+},
 "inputs": {
 "ethics": {
 "passage_name": ""

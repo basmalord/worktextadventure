@@ -14,6 +14,7 @@ var data: Dictionary
 func _ready():
 	load_passage()
 
+
 func load_passage(): #This loads the json file associated with the passage we want to access.
 	if passage_json_file_location == null: #This checks if there is data harboured in the file location variable.
 		print("ERROR: NO JSON FILE LOCATION SET")
@@ -32,6 +33,16 @@ func load_passage(): #This loads the json file associated with the passage we wa
 		input_strings = valid_inputs.keys()
 		print(input_strings)
 
+
+func test_json():
+	var json_file = FileAccess.open("res://JSON Files/template.txt", FileAccess.READ)
+	var text = json_file.get_as_text()
+	var new_json = JSON.new()
+	var json_data = new_json.parse(text)
+	if json_data != OK:
+		print("NOOOOOO")
+		return
+	print(json_data)
 
 func _on_input_box_text_submitted(player_input_text: String) -> void: #This fires when the input box is selected by the player and they hit 'ENTER'.
 	if player_input_text == "": #This checks whether the text inputted is empty

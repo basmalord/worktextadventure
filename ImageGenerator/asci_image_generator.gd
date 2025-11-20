@@ -114,6 +114,7 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 		print("Saved ASCI IMAGE")
 	else:
 		print("ERROR IN SAVING ACII IMAGE")
+	save_ascii_to_file("res://ASCII text files/" + file_name + ".txt", label.text)
 	viewport_for_asci_to_image.queue_free()
 
 

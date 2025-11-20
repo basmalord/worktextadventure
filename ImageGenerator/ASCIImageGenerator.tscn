@@ -4,6 +4,6 @@
 
 [node name="ASCIImageGenerator" type="Node2D"]
 script = ExtResource("1_j12sc")
-visual_location = "res://Images/to.png"
-max_character_width = 100
-image_name = "fuckyou2"
+visual_location = "res://Images/ic.png"
+max_character_width = 400
+image_name = "Abraham4000"

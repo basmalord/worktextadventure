@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4frol6o7acus"]
+
+[ext_resource type="PackedScene" uid="uid://ot7pjbh1rhyw" path="res://Passage/Scenes/passage.tscn" id="1_xi2go"]
+[ext_resource type="PackedScene" uid="uid://qc1d7uofxo0l" path="res://ManagerNodes/ReputationManager/ReputationManager.tscn" id="2_jbpp0"]
+[ext_resource type="PackedScene" uid="uid://bor8i0t3t21x8" path="res://ManagerNodes/ProjectProgressManager/ProjectProgressManager.tscn" id="3_p470j"]
+[ext_resource type="PackedScene" uid="uid://u6jgrwteg455" path="res://ManagerNodes/TimeManager/TimeManager.tscn" id="4_p470j"]
+
+[node name="LevelTest" type="Node2D"]
+
+[node name="Passage" parent="." instance=ExtResource("1_xi2go")]
+
+[node name="ReputationManager" parent="." instance=ExtResource("2_jbpp0")]
+
+[node name="ProjectProgressManager" parent="." instance=ExtResource("3_p470j")]
+
+[node name="TimeManager" parent="." instance=ExtResource("4_p470j")]
