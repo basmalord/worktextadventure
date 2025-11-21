@@ -7,6 +7,8 @@ class_name ASCIImageGenerator
 @export_range(0,12,1) var blank_space_detailing = 7 #controls the amount of pixels taken up by blank space
 @export var output_folder_location: String = "res://Images/"
 @export var is_video: bool = false
+@export var font_path: String
+
 var visual_resource
 var visual_node
 var frame: int = 0
@@ -69,7 +71,11 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 	var h = img.get_height()
 	var new_w = max_character_width
 	var ratio = get_character_w_and_h("res://Fonts/courier-mon.ttf", 16)[0] / get_character_w_and_h("res://Fonts/courier-mon.ttf", 16)[1]
-	var new_h = new_w * ratio
+	var new_h
+	if ratio >= 1:
+		new_h = new_w / ratio
+	else:
+		new_h = new_w * ratio
 	img.resize(new_w, new_h, Image.INTERPOLATE_BILINEAR)
 	if is_video:
 		img.flip_y()
@@ -104,6 +110,7 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 	if is_video:
 		viewport_for_asci_to_image.get_texture().get_image().flip_y()
 	var output_image = viewport_for_asci_to_image.get_texture().get_image()
+	print(output_image)
 	var file_name
 	if !is_video:
 		file_name = image_name + ".png"

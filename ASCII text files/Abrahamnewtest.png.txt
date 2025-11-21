@@ -1,0 +1,64 @@
+bbcc;;bccc;;bbc;ccccbcbbbcbbbbcbbbaaaaaaa a?0000121222233434444444544434aabb!aa!aaa!abaa!!??!?!???!!
+bcccc;cccccccbcc;cbcbccccbbccbccbbbbbabab0000111122223334343334444442bba!,a!aaaa!a!baaaa!a!!a!a!!!!?
+bcbb;ccbccbcccccccccccc;cbcbcccc;c;cbbc;?0001122122233333333333342ccccb?b:.,aaa!bbaaaaa!aa!aaaa!b!b!
+bcbcbbcccb;ccccc;b;ccbcc;cbcbcc;ccccb;b;?0011222223222333333331c;cba!aa:aabb..,!ababaa!a!a!!!a!a!a!!
+cb;cccccccc;ccc;cb;ccccbcbccbcccbccccbc000111222333233333331acbcaaab!a!.aabbcc:_-bba!baaaba!baaaaa02
+ccccccc;cccccccc;ccc;;;cc;;;c;;ccccbccc1012222222322232323c;;aaaaabaa!a_aaaaabbcb._-abbaaabaaa223334
+ababb;;;;;;;c;;;;;;;;;;;;cc;;;c;;;cbc;c2111122322232221;c;abbbaaabbba!a aababbbaccb: ,bbbb!235444334
+abbaabbbba;;::;;:;;;;:;;:;:;:;;;;c;c;;;2222222222210;;;cbccbbbbababbbba.caabbaabbbccbc_2333444444444
+aaabbbbbbbbbccb::::::::+;::;:;:;;:;;;;;1211212110;;;cc+cbcbbcbbbcbccbbbbabcacacbabc23333333444544455
+aaabbabbbbacbcbccccc+++=:::+:::;::;::::2211110b;;cc;cc:ccccccccc;cb;cbcabcbcbbb132333334345445455555
+  !bbbaabbbbbbbbccccc;ccc+++++:::++:::+1110!;;;;;;;;;c;;;ccc;;c;;c;ccccbbbc1323333333334454545555555
+_      bbabbbbbbcbcccccccc;;;;+:+:++:::1?:;;::::;:;;;;;;;:;;c;;;;;c;;;;01122333334444444455555555556
+aa    ______!aabbbbbccbbccc;;c;;;;;++::2;::::::;:;::::b::;;;;;;;;:;;;;!22223334444454445555556555556
+!aaa!=+;c@4=-,,. ?abbbbbbbbbcccccc;c;;;c:::::::::::+:::;:;:::;:::;::::!22333234444555555555455555455
+!!!a+@ÑÑÑÑÑ@30@@=--,-,+aaaabbbbbcbcccc;;;;c;c:::;+::+:;:::::::+:::::::022333444445455555555544444534
+?!!!!!?0012@ÑÑÑÑÑ322@1==--,.!aaabbbcbccc;cccc;;;;;::+::++:+:::::=:::::1333334445555544444444430cccbc
+?!!?!!??!????0123@ÑÑÑÑ@3?Ñ@++==-,!aabcbccccbcccc;;:;;;;+++:++++=+=:+++3444445544443443332c;cbacccbbb
+????!!??????????0001124ÑÑÑÑÑ511Ñ1=--,,bbbbbbcc;c;c;;;;;::;::++:+=:++:;34444444343332ccbbbbcbbbbcbbbb
+????!????????????????00001237@ÑÑÑ@0!, ; .= 6?$:bcc;;;;;;:;::::++;::;::34333232;c;bbcbcbbbbccbccbcbaa
+!!????????0???????????0?0??0?001W-8 !?9 .3!1.4Wacc;cc;;;;;:;;::::;:;;;113;c;cc;cccbbcabccbbcbbbbaabb
+ba!!!!!!???????00?0?0??000??0??a 0+! .:+ 43 8.# c,,,._c;;;;;;;;:;;;;;;:;;;c;cccbccbcbccbcbbbbababbcb
+bbabbbbabba?????0?000000000000,;= =     _ ,,4$2  $.-_......c;;:;;;;;c;ccccccc;bcc;ccbcccbcccbbcbabbb
+bbbbbcbbbbbaaaaa!?????0000000+.               ;b2_-bcccc;-,..___cc;;;cccccccccbc;c;ccbbbcbbababaaaab
+aabbabcbccccbbaaa!!!!!!???000a,        +        =c.bbbccccc;c--.c    .bccbbccccccbccbbbbccbbb!ab;+;c
+aaaaaabaaaaabbabaaaa!!!!!!???=        .;?0.      42bbbbcbbcc;cc+W57W..=    bccbbcccccbbbccccbbbcbccb
+aaaaaaaaaaaaaaa!!!!??!!!!!!!!b  :..        , =cc  3bbcbbbccccc;;;cccc-636,__    cbbccbbbcbbcbccbabbb
+aaaaaaaaabbaaa!!!!!???????????  _     .b! .2+   _ ?bbbbcbbccc;c;;c;bcbcbbbb+1!?.   _bbbbbbbbbbbbbbaa
+aaaaaaaaaaaaaa!!!?????00000001        =a184  -    abbccccccbc;;;cccbcbbbabbbacbbc:;babbbabaaaaaa!!!a
+baaabaaaaaaaaa!!!!???????000000b                    c!bbcbbcc;;ccccbcbbbcabbbbcbbbaaa!!!aa!a!!!!!!!!
+abbbaabaaaaaaa!!!!!???00?0000001                       _  .acbcccbbbbbaaaa!!!a!!!!!!!!!a!!!!!!!!!!!!
+     a!aa!!!a!!!!??0??001000000                    -?        - abbbaaa!!!!a!!!!!!!!!!!!!!??!!?!!?!??
+    !aa!!!!!!?????00001010111.                  ,-+-+ ..:   .._-=!!a!!!!!!!!!!!!???????!!?????!???!?
+    ??0????000001111111111111-               _.=,  -   ,,- _  :;+:=. ?!!!?!?!!??!!??????0?????????00
+    ?000011212221122223230   -   -          +  .     ,?+ ,. + + -;b_::,b ?!?????0?000??0?000?????00?
+    122323333334444448     @9@                               _ ,-,;._?, 00??000000?00?????00?000?000
+   0233344444545551         +                                   .__    000000000?0000000?010??000000
+   43444555556667                                                     ,;+0000000000?0000000?00010010
+   345555666669_ _                                                    ;,=.+0000000000?00000000001001
+   455566677777                                     793                --..b301100000010000101000110
+  =555567777777                          _ _          9?                    -.0100011101010000011111
+  755566677878.                          _,   - _ _,.,                   ,+: = 100001101001110101111
+  55566677778W_                                 .     ...,..                    11110101001111111221
+  5566666677#                  _                      _   _                     11111101011110111111
+175565567778                                    ,_                            . 311001101012111;::! 
+4455556767+;                   __.            .                              ;+-  4322110010;       
+544455667,_  __.                  .1     _      ;                                  01000??0         
+44444554.                         6c       _    1                                   !10?!?00        
+343445,                                         +                                     a???0! _..,--=
+56566                                           a                                      ?:=+;!=++=+=:
+6655                               ;      __  _ :                                      bc,    +==-++
+66                                 6                                                     bc::__   .-
+6                    -.            2                                 _.  .                        . 
+6                   0 .            . -;;-=::=+cbb               .,_,---.,-_             ;bb:==+     
+8     _                           =:+;c!?a;+-=:=,-+:=,_      --,,,,,,-,,, ;             a??!!!aba;+ 
+0     _                        -0a;b?:,==, -bc;:c;b;+;  : _  .,.,.,.._.                ?0?0?!?!!aaa!
++    ,-,_             c        cb?!c_,,;?c;bc+,. _.--++- _     _.__         5         ?00?0???!!aaaa
+  __.,,__  _                     :-;bba:_        .+=;-+:+                    3       101??000?!!!?!!
+_,..-,.,_._ ._                     :=_    -,+bc;;, .._-=                            11211100000????!
+$99$$9$$8989$$999998887889                ,cb+         .                           210000210110?????
+$$9989998$99$9$$9898877888$                                                      11101202210?0?10?01
+$$$99999999W9$9689898988789                                                  212222332111101102110?1
+9$$99999$9$99$99W9988999988$                                                +===02200101211202112111
+999$98$99999$$99$99898989888                                                 ,,. .-=-,0211222302210,
+$$9999$$$99$$9W999$999899999$                                                      _.. .---,0320-,- 
