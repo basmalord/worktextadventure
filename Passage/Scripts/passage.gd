@@ -4,12 +4,21 @@ class_name Passage
 var next_passage: String
 var valid_inputs: Dictionary
 var input_strings: Array
+var amount_of_continue_presses: int = 0
+var passage_parts_array: Array = []
 var data: Dictionary
+var part_number: int
 @export var passage_json_file_location: String
 @export var passage_json_files_folder: String
 @onready var output_box: RichTextLabel = $OutputBox
 @onready var input_box: LineEdit = $InputBox
 @onready var visuals: VideoStreamPlayer = $Visuals
+@onready var reputation_manager: ReputationManager = $ReputationManager
+@onready var progress_manager: ProjectProgressManager = $ProjectProgressManager
+@onready var time_manager = $TimeManager
+@onready var continue_button: Button = $ContinueButton
+@onready var word_grid = $WordGrid
+
 
 func _ready():
 	load_passage()
@@ -28,11 +37,65 @@ func load_passage(): #This loads the json file associated with the passage we wa
 			print("ERROR: PASSAGE TEXT DATA IS NOT JSON FORMATTED")
 			return
 		data = new_json.data
-		output_box.text = data["passage_text"]
+		continue_passage()
 		valid_inputs = data["inputs"]
 		input_strings = valid_inputs.keys()
-		print(input_strings)
 
+func continue_passage():
+	print("AM CON PRES: ", amount_of_continue_presses)
+	passage_parts_array = data["passage_text"]["parts"]
+	var available_parts = get_available_parts(passage_parts_array, generate_state())
+	var part_text = available_parts[0]["text"]
+	part_number = passage_parts_array.find(available_parts[0])
+	check_for_response_required(data)
+	output_box.text = part_text
+
+func check_for_response_required(passage_data):
+	if passage_data["passage_text"] == null:
+		print("ERROR: PASSAGE DATA DOES NOT CONTAIN PASSAGE TEXT KEY")
+		return
+	if data["passage_text"]["parts"][part_number]["response_required"] == true:
+		for child in word_grid.get_child(0).get_children():
+			if child is WordButton:
+				child.disabled = false
+		continue_button.hide()
+		reset_continues()
+	else:
+		for child in word_grid.get_child(0).get_children():
+			if child is WordButton:
+				child.disabled = true
+				print("bozo")
+		continue_button.show()
+		amount_of_continue_presses += 1
+
+func generate_state():
+	var state: Dictionary
+	state["reputation"] = reputation_manager.reputation_type_dictionary
+	state["progress"] = progress_manager.progress
+	state["continue"] = amount_of_continue_presses
+	return state
+
+func get_available_parts(parts: Array, state: Dictionary):
+	var available = []
+	for part in parts:
+		if check_conditions(part,state):
+			available.append(part)
+	return available
+
+func check_conditions(part: Dictionary, state: Dictionary): #takes a part of the passage, compares its conditions to the gamestate, returns false if no match, true otherwise.
+	for key in part["conditions"].keys():
+		var cond_val = part["conditions"][key]
+		if typeof(cond_val) == TYPE_DICTIONARY:
+			for subkey in cond_val.keys():
+				if state[key][subkey] != cond_val[subkey]:
+					return false
+		else:
+			if state[key] != cond_val:
+				return false
+	return true
+
+func reset_continues():
+	amount_of_continue_presses = 0
 
 func test_json():
 	var json_file = FileAccess.open("res://JSON Files/template.txt", FileAccess.READ)
