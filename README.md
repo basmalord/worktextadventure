@@ -30,6 +30,3 @@ JSON beginner's guide (syntax and formatting super simple!): https://stackoverfl
 JSON validator (provides testing for your JSON files to see if they can be read as such, will also highlight where and how syntax errors occur):
 
 https://stackoverflow.blog/2022/06/02/a-beginners-guide-to-json-the-data-format-for-the-internet/
-
-
-

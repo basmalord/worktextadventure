@@ -1,45 +1,38 @@
 {
 "passage_name": "template",
-"visual_name": "",
 "passage_text": {
-"parts": {
-"conditions": {
-"reputation": {
-"manager": 0
-}
-"progress": 0
-"continue": 0
-}
-"text"
-} "template",
-},
-"inputs": {
-"ethics": {
-"passage_name": ""
-},
-"environment": {
-"passage_name": ""
-},
-"success": {
-"passage_name": ""
-},
-"relaxation": {
-"passage_name": ""
-},
-"compassion": {
-"passage_name": ""
-},
-"realism": {
-"passage_name": ""
-},
-"dedication": {
-"passage_name": ""
-},
-"enthusiasm": {
-"passage_name": ""
-},
-"profit": {
-"passage_name": ""
-},
-}
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "template"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
 }
