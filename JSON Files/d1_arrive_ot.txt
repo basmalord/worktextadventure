@@ -1,27 +1,89 @@
 {
 "passage_name": "d1_arrive_ot",
-"visual_name": "",
-"passage_text": "You get ready and leave on time.
-
-You listen to the news as you drive to work:
-'NewVision announces new environmental goals in response to increasing protests!'
-
-You make it to work. Someone meets you at the front desk and takes you to your desk.
-She says she is Dirk’s assistant.
-
-Dirk’s an old friend who recommended the job. He’s the project manager and was quite
-enthusiastic about this Data Centre last time you spoke.
-
-You spend a while settling in and signing in to all the systems before Dirk comes to 
-your desk, 
-'Hey mate, it's great to see you! I'm so glad corporate decided to hire you,
-you're just the person I need for this role! Can I count on your 100% commitment
-to getting this project over the line?'
-
-How do you respond?
-
-"
-,
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Video/d1/door_open/door_open.ogv"
+		},
+	"response_required": false,
+	"text": "You get washed and dressed, day goodybe to your wife and son, and head out for the day."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Video/d1/driving3/driving.ogv"
+		},
+	"response_required": false,
+	"text": "You listen to the business news as you drive to work:\n'NewVision announces new environmental commitments in response to increasing protests!'\n You can't help but feel a sense of pride; this is what you came to NewVision for."
+	},
+	{
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 2
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/dirk_assistant.png"
+		},
+	"response_required": false,
+	"text": "You make it to work. A tired-looking woman meets you at the front and leads you to your new desk.\n\n'I'm Dirk's assistant. I might say you're quite lucky he recommended you for the job, but I don't want to give you false hope.'"
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": 0
+		},
+		"progress": 0,
+		"continue": 3
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/dirk_desk.png"
+		},
+	"response_required": true,
+	"text": "You definitely feel lucky; it's not often that a somebody fresh out of grad school makes it straight to management of NewVision.\n\nYou hear the familiar stomp of Dirk's great hooves. Before you know it, he's standing, tall as ever, over your desk.\n\n'How's it going, guy? Bet you're stoked to start- just think, six years ago we were rooming like nerds at El Paso State. Now I own a boat! Who knows, six more years, maybe seven, and you might have one of your own too! Now, buddy, let me ask you: are you psyched about NewVisions pioneering new data centre project, or are you psyched?'"
+	}
+	]
+},
 "inputs": {
 "ethics": {
 "passage_name": "d1_dirk_response_bad"
@@ -30,10 +92,10 @@ How do you respond?
 "passage_name": "d1_dirk_response_bad"
 },
 "success": {
-"passage_name": "d1_drik_response_good"
+"passage_name": "d1_dirk_response_good"
 },
 "relaxation": {
-"passage_name": "d1_drik_response_good"
+"passage_name": "d1_dirk_response_good"
 },
 "compassion": {
 "passage_name": "d1_dirk_response_bad"
@@ -42,13 +104,13 @@ How do you respond?
 "passage_name": "d1_dirk_response_bad"
 },
 "dedication": {
-"passage_name": "d1_drik_response_good"
+"passage_name": "d1_dirk_response_good"
 },
 "enthusiasm": {
-"passage_name": "d1_drik_response_good"
+"passage_name": "d1_dirk_response_good"
 },
 "profit": {
-"passage_name": "d1_drik_response_good"
-},
+"passage_name": "d1_dirk_response_good"
+}
 }
 }

@@ -1,0 +1,102 @@
+{
+"passage_name": "d2_home",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"jane_levitt": true,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "You spend the rest of the day eagerly awaiting the time you can tell your family that you're going to be on T.V. \n\nYou finally get home and greet your wife and son. Before you're able to say anything, your wife reminds you that it's your son's birthday tomorrow.\\TO BE CONTINUED"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"working_late": true,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "After Dirk leaves, you prepare your things to head back home, dreading the day of long work to come. TO BE CONTINUED"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"performance_review": true,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "After Dirk leaves, you prepare your things to head back home, dreading to find out what a 'firecracker' of a performance review is."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"fired": true,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "Embarrassed and ashamed you make your way to the exit. You will never set foot in NewVision's offices again. THE END"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

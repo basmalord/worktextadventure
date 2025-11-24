@@ -8,6 +8,7 @@ class_name ASCIImageGenerator
 @export var output_folder_location: String = "res://Images/"
 @export var is_video: bool = false
 @export var font_path: String
+@export var flip_char_list: bool = true
 
 var visual_resource
 var visual_node
@@ -60,7 +61,7 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 	for n in blank_space_detailing:
 		blank_space += " ".repeat(n)
 	char_list = char_list + blank_space
-	char_list = char_list.reverse()
+	#char_list = char_list.reverse()
 	var asci_text: String = "" #alaways initialise a string
 	var img := Image.new()
 	var err := img.load(path)
@@ -70,15 +71,16 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 	var w = img.get_width()
 	var h = img.get_height()
 	var new_w = max_character_width
-	var ratio = get_character_w_and_h("res://Fonts/courier-mon.ttf", 16)[0] / get_character_w_and_h("res://Fonts/courier-mon.ttf", 16)[1]
+	var ratio = get_character_w_and_h(font_path, 12)[0] / get_character_w_and_h(font_path, 12)[1]
 	var new_h
+	print("this is ratio: ", ratio)
 	if ratio >= 1:
 		new_h = new_w / ratio
 	else:
 		new_h = new_w * ratio
 	img.resize(new_w, new_h, Image.INTERPOLATE_BILINEAR)
-	if is_video:
-		img.flip_y()
+	#if is_video:
+		#img.flip_y()
 	for y in range(new_h):
 		for x in range(new_w):
 			var c = img.get_pixel(x,y)
@@ -93,15 +95,15 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 	label.text = asci_text
 	label.set_autowrap_mode(TextServer.AUTOWRAP_OFF)
 	label.set_vertical_alignment(VERTICAL_ALIGNMENT_TOP)
-	var new_font = load("res://Fonts/courier-mon.ttf")
+	var new_font = load(font_path)
 	label.add_theme_font_override("font", new_font)
 	label.add_theme_color_override("font_color", Color.WHITE)
-	label.size = Vector2(4096, 4096)
 	viewport_container.add_child(viewport_for_asci_to_image)
 	await get_tree().process_frame
 	label.size = label.get_minimum_size()
 	viewport_for_asci_to_image.size = label.size
 	viewport_for_asci_to_image.size.y = viewport_for_asci_to_image.size.y * ratio
+	#viewport_for_asci_to_image.size.x = viewport_for_asci_to_image.size.x * 1.5 #added this to make a vid work
 	viewport_for_asci_to_image.set_update_mode(SubViewport.UPDATE_ALWAYS)
 	viewport_for_asci_to_image.disable_3d = true
 	viewport_for_asci_to_image.transparent_bg = false

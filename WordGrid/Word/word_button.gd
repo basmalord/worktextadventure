@@ -17,6 +17,8 @@ class_name WordButton
 func _ready():
 	self.pressed.connect(_on_pressed)
 	set_word(word)
+	var font_to_use = load("res://Fonts/ModernDOS8x8.ttf")
+	add_theme_font_override("font", font_to_use)
 
 func set_word(word_to_set: String):
 	text = word_to_set

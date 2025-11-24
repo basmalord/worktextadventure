@@ -1,12 +1,12 @@
 {
-"passage_name": "template",
+"passage_name": "d1_wake_up",
 "passage_text": {
 	"parts":[
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": 0,
-			"family": 0
+			"manager": -100,
+			"family": -100
 		},
 		"progress": 0,
 		"continue": 0
@@ -17,7 +17,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "bedside_clock.png"
+		"visual": "res://Images/d1/bedside.png"
 		},
 	"response_required": false,
 	"text": "You wake up next to your sleeping wife. It's 7:00am. The letter you received from your new company sits on your dresser."
@@ -25,8 +25,8 @@
 	{
 	  "conditions": {
 		"reputation": {
-			"manager": 0,
-			"family": 0
+			"manager": -100,
+			"family": -100
 		},
 		"progress": 0,
 		"continue": 1
@@ -37,10 +37,10 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "letter.png"
+		"visual": "res://Images/d1/bedside.png"
 		},
 	"response_required": true,
-	"text": "It reads, 'Welcome to NewVision! What you need to know about your new position in our family. Director Of Environmental and Sustainability Compliance for the Gumpton Dawdley Data Center. To meet growing concern in the field of environmental protection and sustainable practices we have established new targets for our Gumpton Dawdley Data Centre Project. That is why we have brought you in to overlook all matters relating to the Data Center and ensuring we meet those targets. We hope you can make a difference at NewVision!'\nYour wife notices you reading, 'It's too early for all this honey, go back to sleep.'\nChoose your response."
+	"text": "It reads:\n\n'Welcome to NewVision! What you need to know about your new position in our family:\n\nDirector Of Environmental and Sustainability Compliance for the Gumpton Dawdley Data Center. To meet growing concern in the field of environmental protection and sustainable practices we have established new targets for our Gumpton Dawdley Data Centre Project. That is why we have brought you in to overlook all matters relating to the Data Center and ensuring we meet those targets. We hope you can make a difference at NewVision!'\n\nYour wife notices you reading:\n\n 'It's too early for all this honey, go back to sleep.'\n\nChoose your response from the options below."
 	}
 	]
   },

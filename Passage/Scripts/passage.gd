@@ -8,6 +8,8 @@ var amount_of_continue_presses: int = 0
 var passage_parts_array: Array = []
 var data: Dictionary
 var part_number: int
+var state_conditions: Dictionary = {}
+var image_position
 @export var passage_json_file_location: String
 @export var passage_json_files_folder: String
 @onready var output_box: RichTextLabel = $OutputBox
@@ -21,6 +23,7 @@ var part_number: int
 
 
 func _ready():
+	image_position = $VisualsI.position
 	load_passage()
 
 
@@ -49,6 +52,8 @@ func continue_passage():
 	part_number = passage_parts_array.find(available_parts[0])
 	check_for_response_required(data)
 	output_box.text = part_text
+	generate_changes()
+	print(generate_state())
 
 func check_for_response_required(passage_data):
 	if passage_data["passage_text"] == null:
@@ -64,7 +69,6 @@ func check_for_response_required(passage_data):
 		for child in word_grid.get_child(0).get_children():
 			if child is WordButton:
 				child.disabled = true
-				print("bozo")
 		continue_button.show()
 		amount_of_continue_presses += 1
 
@@ -87,12 +91,78 @@ func check_conditions(part: Dictionary, state: Dictionary): #takes a part of the
 		var cond_val = part["conditions"][key]
 		if typeof(cond_val) == TYPE_DICTIONARY:
 			for subkey in cond_val.keys():
-				if state[key][subkey] != cond_val[subkey]:
+				if state[key][subkey] < cond_val[subkey]:
 					return false
-		else:
+		elif key == "continue":
 			if state[key] != cond_val:
 				return false
+		elif key == "progress":
+			print(state[key], cond_val)
+			if state[key] < cond_val:
+				return false
+		else:
+			if state_conditions.keys().find(key) == -1:
+				return false
+			if part["conditions"][key] != state_conditions[key]:
+				return false
 	return true
+
+func generate_changes():
+	if !data.has("passage_text"):
+		push_error("Missing: data['passage_text']")
+		return
+	if data["passage_text"]["parts"][part_number]["changes"].is_empty():
+		push_error("'changes' exists but contains no data")
+		return
+	var changes_dict = data["passage_text"]["parts"][part_number]["changes"]
+	change_variables(changes_dict)
+
+
+func change_variables(changes_dict: Dictionary):
+	for key in changes_dict.keys():
+		var change_val = changes_dict[key]
+		if typeof(change_val) == TYPE_DICTIONARY:
+			for subkey in change_val.keys():
+				var reputation_key = subkey
+				var reputation_change_val = change_val[reputation_key]
+				reputation_manager.add_reputation(reputation_change_val,reputation_key)
+				print(reputation_manager.reputation_type_dictionary)
+		else:
+			match key:
+				"progress":
+					var progress_to_add = changes_dict["progress"]
+					progress_manager.update_progress(progress_to_add)
+					print("MATCHED PROGRESS")
+				"visual":
+					print("VISUAL RUNNING")
+					var visual_path = changes_dict["visual"]
+					var visual_resource = load(visual_path)
+					if visual_resource == null:
+						print("ERROR: VISUAL PATH DATA IN JSON DOES NOT LEAD TO VALID VISUAL")
+						continue
+					elif visual_resource is Texture2D:
+						$VisualsV.hide()
+						$VisualsI.show()
+						$VisualsI.texture = visual_resource
+						if visual_resource.resource_path == "res://Images/d1/dirk_desk.png":
+							$VisualsI.position.x = image_position.x - 50
+						else:
+							$VisualsI.position = image_position
+						print("VISUAL RUNNING FOR I")
+					elif visual_resource is VideoStream:
+						$VisualsI.hide()
+						$VisualsV.show()
+						$VisualsV.stream = visual_resource
+						$VisualsV.play()
+						print("VISUAL RUNNING FOR V")
+					else:
+						print("ERROR: VISUAL RESOURCE PATH LOADS VALID DATA, BUT NOT TEXTURE2D OR VIDEOSTREAM")
+				_:
+					if changes_dict[key] is not bool:
+						return
+					var condition_key = key
+					var condition_value = changes_dict[key]
+					state_conditions[condition_key] = condition_value
 
 func reset_continues():
 	amount_of_continue_presses = 0

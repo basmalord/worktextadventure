@@ -26,7 +26,7 @@ func generate_frames():
 	var video_length_s = video_player.get_stream_length()
 	var frame_length_s = 1.0 / new_video_frame_rate
 	var number_of_frames_to_collect = video_length_s / frame_length_s
-	print("THIS IS NO OF FRAMES TO COLELCT: ", number_of_frames_to_collect)
+	print("THIS IS NO OF FRAMES TO COLLECT: ", number_of_frames_to_collect)
 	for i in number_of_frames_to_collect:
 		var output_path_godot: String = frames_folder_path + "/" + video_frames_name + frame_suffix + str(int(i)) + image_format
 		var output_path_absolute: String = frames_folder_absolute_path + "/" + video_frames_name + frame_suffix + str(int(i)) + image_format

@@ -1,0 +1,38 @@
+{
+"passage_name": "d1_ali_home_grown",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": -1,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/dirk_desk.png"
+		},
+	"response_required": true,
+	"text": "Ali's Home Grown, from farm to table, from crop to paper. You're not sure about the optics, but who can argue with responsibly sourced, nutritious produce?\n\nYou sign right on the dotted line.\n\nWith your work finished for the day, it's time to head home.\n\nJust as you're about to leave, Dirk appears, arms stretched wide across your desk,\n\n'Good work today, bud. How's about a drink with your new boss, celebrate the new day- you know, Guy?'"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d1_home" },
+	"environment": { "passage_name": "d1_out" },
+	"success": { "passage_name": "d1_out" },
+	"relaxation": { "passage_name": "d1_home" },
+	"compassion": { "passage_name": "d1_home" },
+	"realism": { "passage_name": "d1_out" },
+	"dedication": { "passage_name": "d1_home" },
+	"enthusiasm": { "passage_name": "d1_out" },
+	"profit": { "passage_name": "d1_out" }
+  }
+}

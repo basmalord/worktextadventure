@@ -1,0 +1,60 @@
+{
+"passage_name": "d2_wake_up",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0,
+		"went_out": true
+	  },
+	
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/bedside.png"
+		},
+	"response_required": true,
+	"text": "You wake up, tired and hungover. Your wife is still asleep, you can't remember if you spoke to her before falling asleep last night. \n\nYou wonder whether you should do something to make it up to her."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/bedside.png"
+		},
+	"response_required": true,
+	"text": "You wake up, refreshed and happy. Your son and wife lie beside you- he didn't want to go to sleep alone, so instead you all continued the dinosaur documentary in bed together. \n\nYou wash and get dressed. Just as you're about to head out the door, your son turns to you:\n\n'Have a great day dad!'"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d2_leave_late" },
+	"environment": { "passage_name": "d2_leave_ot" },
+	"success": { "passage_name": "d2_leave_ot" },
+	"relaxation": { "passage_name": "d2_leave_late" },
+	"compassion": { "passage_name": "d2_leave_late" },
+	"realism": { "passage_name": "d2_leave_ot" },
+	"dedication": { "passage_name": "d2_leave_ot" },
+	"enthusiasm": { "passage_name": "d2_leave_ot" },
+	"profit": { "passage_name": "d2_leave_ot" }
+  }
+}

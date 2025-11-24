@@ -1,0 +1,78 @@
+{
+"passage_name": "d1_analysis_response_good",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/big_x.png"
+		},
+	"response_required": false,
+	"text": "You can't in good conscience sign off on research with a flase representation of the data. Sure, their framing still doesn't paint NewVision in the best light, but the data shows a much darker public perception than the conclusion suggests.\n\nYou take a red marker from your desk and mark the sign off box with a large red 'X'."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": -1,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/dirk_assistant.png"
+		},
+	"response_required": false,
+	"text": "Just as you finish marking the research, Dirk's assistant appears at your desk. She looks upset.\n\n'So I'll have to send this back to R&D I suppose? Dirk won't be happy about this...'\n\nShe takes the analysis from your desk and heads off briskly towards Dirk's office."
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 2
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/hammer_and_sickle.png"
+		},
+	"response_required": true,
+	"text": "You scan your desk for the next piece of paper work to review. It's the results of NewVision's negotiations with San Toro's Ministry of Labour,\n\nObligatory overtime at management discretion,\n\nWaiving of medical insurance rights,\n\nEight tenths of site and site infrastructure construction costs to be paid for by the State of San Toro,\n\n Renewable energy to make up 35% of the site's total demand,\n\n Renewable energy infrastructure to be supplied by US manufacturers, to the exclusion of all other nations.\n\n Below the summary of outcomes is a signature box."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d1_labour_response_good" },
+	"environment": { "passage_name": "d1_labour_response_bad" },
+	"success": { "passage_name": "d1_labour_response_bad" },
+	"relaxation": { "passage_name": "d1_labour_response_good" },
+	"compassion": { "passage_name": "d1_labour_response_good" },
+	"realism": { "passage_name": "d1_labour_response_good" },
+	"dedication": { "passage_name": "d1_labour_response_good" },
+	"enthusiasm": { "passage_name": "d1_labour_response_bad" },
+	"profit": { "passage_name": "d1_labour_response_bad" }
+  }
+}

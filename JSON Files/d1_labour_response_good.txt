@@ -1,0 +1,58 @@
+{
+"passage_name": "d1_labour_response_good",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": -1,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/big_x.png"
+		},
+	"response_required": false,
+	"text": "35% is not good enough if NewVision is to truly commit to acting in the interests of the environment. You mark the document with a large, red 'X'."
+	},
+	{
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/wheat.png"
+		},
+	"response_required": true,
+	"text": "You turn to the last of your documents for the day. It's a dosier outlining a cost benefit analysis of various offers from companies to be the office's snack provider.\n\nThree take your eye:\n\nSyberSerf, a company specialising in cyber-fuedalism themed protein energy drinks,\n\nAli's Homegrown, a farm-to-table grocer that specialises in seasonal root vegetables... and all natural, non-GMO marijuana,\n\nAnd DELCO, the nation's largest provider of office confectionary. Known for classics such as: 'milk chocolate wafer, snack_code: MC99b'."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d1_ali_home_grown" },
+	"environment": { "passage_name": "d1_ali_home_grown" },
+	"success": { "passage_name": "d1_delco" },
+	"relaxation": { "passage_name": "d1_syber_serf" },
+	"compassion": { "passage_name": "d1_syber_serf" },
+	"realism": { "passage_name": "d1_delco" },
+	"dedication": { "passage_name": "d1_ali_home_grown" },
+	"enthusiasm": { "passage_name": "d1_syber_serf" },
+	"profit": { "passage_name": "d1_delco" }
+  }
+}

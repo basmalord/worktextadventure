@@ -1,0 +1,38 @@
+{
+"passage_name": "d1_home",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 1,
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/t-rex.png"
+		},
+	"response_required": true,
+	"text": "You make your way home. As you enter, you see your wife and son cuddled up in front of the T.V. They're watching a documentary about dinosaurs.\n\n'It's a Tiranasaurous, daddy!'\n\n'Aren't you a clever little man,' you say.\n\nYou spend the evening with them, watching dinosaurs and shouting their names."
+	}
+	]
+  },
+ "inputs": {
+	"ethics": { "passage_name": "d2_wake_up" },
+	"environment": { "passage_name": "d2_wake_up"  },
+	"success": { "passage_name": "d2_wake_up"  },
+	"relaxation": { "passage_name": "d2_wake_up"  },
+	"compassion": { "passage_name": "d2_wake_up"  },
+	"realism": { "passage_name": "d2_wake_up"  },
+	"dedication": { "passage_name": "d2_wake_up"  },
+	"enthusiasm": { "passage_name": "d2_wake_up"  },
+	"profit": { "passage_name": "d2_wake_up"  }
+  }
+}

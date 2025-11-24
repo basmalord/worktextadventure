@@ -1,0 +1,39 @@
+{
+"passage_name": "d1_out",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 1,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/dirk_desk.png",
+		"went_out": true
+		},
+	"response_required": true,
+	"text": "You head out with Dirk. It's a long night of drinking and poorly-informed nautical discourse.\n\n Despite your best efforts, the conversation rarely turns to environmental targets.\n\nThe night ends abruptly, a drunken Dirk piles into a shining black car, pulling you along with him. As the driver drops you off at your home, Dirk pulls you close, vigorously:\n\n'Don't fuck this up, guy. It's not just your ass on the line.'"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d2_wake_up" },
+	"environment": { "passage_name": "d2_wake_up"  },
+	"success": { "passage_name": "d2_wake_up"  },
+	"relaxation": { "passage_name": "d2_wake_up"  },
+	"compassion": { "passage_name": "d2_wake_up"  },
+	"realism": { "passage_name": "d2_wake_up"  },
+	"dedication": { "passage_name": "d2_wake_up"  },
+	"enthusiasm": { "passage_name": "d2_wake_up"  },
+	"profit": { "passage_name": "d2_wake_up"  }
+  }
+}

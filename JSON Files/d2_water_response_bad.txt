@@ -1,0 +1,99 @@
+{
+"passage_name": "d2_water_response_bad",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 20,
+		"visual": "res://Video/d1/typing/typing.ogv"
+		},
+	"response_required": false,
+	"text": "You e-sign on the dotted line, receiving a response almost immediately:\n\n'Thanks for the prompt reply! Dirk was right about you!\n\nJohn'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"picked_syber": true,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 20,
+		"visual": "res://Images/d2/mark_angry2.png"
+		},
+	"response_required": false,
+	"text": "You're about to take a look at the rest of your emails before you're interupted by a rather large man.\n\n'Hey, I'm Mark, from accounts. I just wanted to say thanks for getting us those SyberSerf protein shakes.\n\n They've already improved my productivity- just this morning I found an unutilised accounting loop-hole in the San Toro development.\n\nI shifted a few things around and was able to funnel the money we were spending on our carbon permits into more 'productive' avenues!'"
+	},
+		{
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d2/mark_angry2.png"
+		},
+	"response_required": false,
+	"text": "You're about to take a look at the rest of your emails before you're interupted by a rather large man.\n\n'Hey, I'm Mark, from accounts. I just wanted to let you know that you suck. You have no idea how long I was waiting for us to get those sweet SyberSerf shakes in.\n\nI nominated those guys for officer snack supplier six months ago and you're here for one day and ruin it!\n\nThanks a lot, jerk.'"
+	},
+		{
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 2
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/dirk_desk.png"
+		},
+	"response_required": true,
+	"text": "As Mark leaves, Dirk approaches.\n\n'Hey buddy, just checking in, wanted to get your take on how things are going."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d2_dirk_response_negative" },
+	"environment": { "passage_name": "d2_dirk_response_negative" },
+	"success": { "passage_name": "d2_dirk_response_negative" },
+	"relaxation": { "passage_name": "d2_dirk_response_negative" },
+	"compassion": { "passage_name": "d2_dirk_response_negative"  },
+	"realism": { "passage_name": "d2_dirk_response_negative"  },
+	"dedication": { "passage_name": "d2_dirk_response_negative"  },
+	"enthusiasm": { "passage_name": "d2_dirk_response_negative" },
+	"profit": { "passage_name": "d2_dirk_response_negative" }
+  }
+}
