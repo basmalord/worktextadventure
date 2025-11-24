@@ -62,7 +62,8 @@ func check_for_response_required(passage_data):
 	if data["passage_text"]["parts"][part_number]["response_required"] == true:
 		for child in word_grid.get_child(0).get_children():
 			if child is WordButton:
-				child.disabled = false
+				if child.usage != 0:
+					child.disabled = false
 		continue_button.hide()
 		reset_continues()
 	else:
