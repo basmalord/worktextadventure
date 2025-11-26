@@ -20,7 +20,7 @@
 		"visual": "res://Images/d1/t-rex.png"
 		},
 	"response_required": true,
-	"text": "You make your way home. As you enter, you see your wife and son cuddled up in front of the T.V. They're watching a documentary about dinosaurs.\n\n'It's a Tiranasaurous, daddy!'\n\n'Aren't you a clever little man,' you say.\n\nYou spend the evening with them, watching dinosaurs and shouting their names."
+	"text": "You make your way home. As you enter, you see your wife and son cuddled up in front of the T.V. They're watching a documentary about dinosaurs.\n\n'It's a Tiranasaurous, daddy!'\n\n'Aren't you a clever little man, son'.\n\nYou spend the evening with them, watching dinosaurs and shouting their names."
 	}
 	]
   },

@@ -61,7 +61,8 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 	for n in blank_space_detailing:
 		blank_space += " ".repeat(n)
 	char_list = char_list + blank_space
-	#char_list = char_list.reverse()
+	if flip_char_list:
+		char_list = char_list.reverse()
 	var asci_text: String = "" #alaways initialise a string
 	var img := Image.new()
 	var err := img.load(path)
@@ -103,7 +104,7 @@ func image_to_asci(path: String, op_folder: String = output_folder_location, cha
 	label.size = label.get_minimum_size()
 	viewport_for_asci_to_image.size = label.size
 	viewport_for_asci_to_image.size.y = viewport_for_asci_to_image.size.y * ratio
-	#viewport_for_asci_to_image.size.x = viewport_for_asci_to_image.size.x * 1.5 #added this to make a vid work
+	viewport_for_asci_to_image.size.x = viewport_for_asci_to_image.size.x * 1.5 
 	viewport_for_asci_to_image.set_update_mode(SubViewport.UPDATE_ALWAYS)
 	viewport_for_asci_to_image.disable_3d = true
 	viewport_for_asci_to_image.transparent_bg = false

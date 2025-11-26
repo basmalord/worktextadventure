@@ -81,7 +81,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "template_visual"
+		"visual": "res://Images/d2/fired.png"
 		},
 	"response_required": true,
 	"text": "Embarrassed and ashamed you make your way to the exit. You will never set foot in NewVision's offices again. THE END"

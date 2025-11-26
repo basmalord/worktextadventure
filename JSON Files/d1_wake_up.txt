@@ -40,7 +40,7 @@
 		"visual": "res://Images/d1/bedside.png"
 		},
 	"response_required": true,
-	"text": "It reads:\n\n'Welcome to NewVision! What you need to know about your new position in our family:\n\nDirector Of Environmental and Sustainability Compliance for the Gumpton Dawdley Data Center. To meet growing concern in the field of environmental protection and sustainable practices we have established new targets for our Gumpton Dawdley Data Centre Project. That is why we have brought you in to overlook all matters relating to the Data Center and ensuring we meet those targets. We hope you can make a difference at NewVision!'\n\nYour wife notices you reading:\n\n 'It's too early for all this honey, go back to sleep.'\n\nChoose your response from the options below."
+	"text": "It reads:\n\n'Welcome to NewVision! What you need to know about your new position in our family:\n\nDirector Of Environmental and Sustainability Compliance for our prospective San Toro Data Centre. Enivronmental concern is at the heart of what we do here, and we hope you cna help build that sentiment. Welcome to NewVision!'\n\nYour wife notices you reading:\n\n'It's too early for all this honey, go back to sleep.'\n\nChoose your response from the options to the right."
 	}
 	]
   },

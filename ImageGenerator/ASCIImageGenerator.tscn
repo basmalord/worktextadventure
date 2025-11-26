@@ -4,9 +4,8 @@
 
 [node name="ASCIImageGenerator" type="Node2D"]
 script = ExtResource("1_j12sc")
-visual_location = "res://Images/d2/large_man.jpg"
+visual_location = "res://Images/d2/fired_og.png"
 max_character_width = 100
-image_name = "mark_angry2"
+image_name = "fired_ascii"
 output_folder_location = "res://Images/d2/"
 font_path = "res://Fonts/ModernDOS8x8.ttf"
-flip_char_list = false

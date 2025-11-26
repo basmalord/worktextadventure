@@ -10,9 +10,9 @@ var data: Dictionary
 var part_number: int
 var state_conditions: Dictionary = {}
 var image_position
-@export var passage_json_file_location: String
-@export var passage_json_files_folder: String
-@onready var output_box: RichTextLabel = $OutputBox
+@export var passage_json_file_location: String 
+@export var passage_json_files_folder: String 
+@onready var output_box: RichTextLabel = $OutputControl/OutputScroll/OutputBox
 @onready var input_box: LineEdit = $InputBox
 @onready var visuals: VideoStreamPlayer = $Visuals
 @onready var reputation_manager: ReputationManager = $ReputationManager

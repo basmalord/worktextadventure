@@ -20,7 +20,7 @@
 		"visual": "res://Images/d1/big_x.png"
 		},
 	"response_required": false,
-	"text": "35% is not good enough if NewVision is to truly commit to acting in the interests of the environment. You mark the document with a large, red 'X'."
+	"text": "35% is not good enough if NewVision is to truly commit to acting in the interests of the environment. The other stuff was not part of your purview, so it probably didn't factor into your decision-making.\n\nYou mark the document with a large, red 'X'."
 	},
 	{
 	  "conditions": {

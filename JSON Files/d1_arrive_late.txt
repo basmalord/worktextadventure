@@ -60,7 +60,7 @@
 		"visual": "res://Images/d1/dirk_assistant.png"
 		},
 	"response_required": false,
-	"text": "You make it to work. A tired-looking woman meets you at the front and leads you to your new desk.\n\n'I'm Dirk's assistant. I might say you're quite lucky he recommended you for the job, but I don't want to give you false hope. He won't say it, but he'll be pretty PO'd at you getting here so late.'"
+	"text": "You make it to work. A tired-looking woman meets you at the front and leads you to your new desk.\n\n'I'm Linda, Dirk's assistant. I might say you're quite lucky he recommended you for the job, but I don't want to give you false hope. He won't say it, but he'll be pretty PO'd at you getting here so late.'"
 	},
 		 {
 	  "conditions": {
@@ -80,7 +80,7 @@
 		"visual": "res://Images/d1/dirk_desk.png"
 		},
 	"response_required": true,
-	"text": "You definitely feel lucky; it's not often that a somebody fresh out of grad school makes it straight to management of NewVision.\n\nYou hear the familiar stomp of Dirk's great hooves. Before you know it, he's standing, tall as ever, over your desk.\n\n'How's it going, guy? Bet you're stoked to start- just think, six years ago we were rooming like nerds at El Paso State. Now I own a boat! Who knows, six more years, maybe seven, and you might have one of your own too! Now, buddy, let me ask you: are you psyched about NewVisions pioneering new data centre project, or are you psyched?'"
+	"text": "You definitely feel lucky; it's not often that a somebody fresh out of grad school makes it straight to management of NewVision.\n\nYou hear the familiar stomp of Dirk's great hooves. Before you know it, he's standing, tall as ever, over your desk.\n\n'How's it going, guy? Bet you're stoked to start- just think, six years ago we were rooming like nerds at El Paso State. Now I own a boat! Who knows, six more years, maybe seven, and you might have one of your own too! Now, buddy, let me ask you: are you psyched about NewVision's pioneering new data centre project, or are you psyched?'"
 	}
 	]
 },

@@ -40,7 +40,7 @@
 		"visual": "res://Images/d1/dirk_assistant.png"
 		},
 	"response_required": false,
-	"text": "Just as you finish marking the research, Dirk's assistant appears at your desk. She looks upset.\n\n'So I'll have to send this back to R&D I suppose? Dirk won't be happy about this...'\n\nShe takes the analysis from your desk and heads off briskly towards Dirk's office."
+	"text": "Just as you finish marking the research, Linda appears at your desk. She looks upset.\n\n'So I'll have to send this back to R&D I suppose? Dirk won't be happy about this...'\n\nShe takes the analysis from your desk and heads off briskly towards Dirk's office."
 	},
 		 {
 	  "conditions": {
@@ -60,7 +60,7 @@
 		"visual": "res://Images/d1/hammer_and_sickle.png"
 		},
 	"response_required": true,
-	"text": "You scan your desk for the next piece of paper work to review. It's the results of NewVision's negotiations with San Toro's Ministry of Labour,\n\nObligatory overtime at management discretion,\n\nWaiving of medical insurance rights,\n\nEight tenths of site and site infrastructure construction costs to be paid for by the State of San Toro,\n\n Renewable energy to make up 35% of the site's total demand,\n\n Renewable energy infrastructure to be supplied by US manufacturers, to the exclusion of all other nations.\n\n Below the summary of outcomes is a signature box."
+	"text": "You scan your desk for the next piece of paper work to review. It's the results of NewVision's negotiations with San Toro's Ministry of Labour:\n\nObligatory overtime at management discretion,\n\nWaiving of medical insurance rights,\n\nEight tenths of site and site infrastructure construction costs to be paid for by the State of San Toro,\n\nRenewable energy to make up 35% of the site's total demand,\n\nRenewable energy infrastructure to be supplied by US manufacturers, to the exclusion of all other nations.\n\nBelow the summary of outcomes is a signature box."
 	}
 	]
   },

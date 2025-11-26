@@ -63,7 +63,7 @@
 		"visual": "res://Images/d1/dirk_desk.png"
 		},
 	"response_required": true,
-	"text": "'Couldn't have said it better myself, you're slacking, and in need of a firecracker of a performance review to shake things up.\n\n So don't make plans for tomorrow night because it's going to have to be an overtime gig!\n\nAll good with you?"
+	"text": "'Couldn't have said it better myself, you're slacking, and in need of a firecracker of a performance review to shake things up.\n\n So don't make plans for tomorrow night because it's going to have to be an overtime gig!\n\nAll good with you?'"
 	},
 	 {
 	  "conditions": {
@@ -84,7 +84,7 @@
 		"visual": "res://Images/d1/dirk_desk.png"
 		},
 	"response_required": true,
-	"text": "'It's like you read my mind, guy. I agree wholeheartedly: this just isn't right for you. So get your shit, and your green thumbs, and get out of here will ya!?"
+	"text": "'It's like you read my mind, guy. I agree wholeheartedly: this just isn't right for you. So get your shit, and your green thumbs, and get out of here will ya!?\n\n YOU'RE FIRED!'"
 	}
 	]
   },

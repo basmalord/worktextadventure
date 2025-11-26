@@ -20,7 +20,7 @@
 		"visual": "template_visual"
 		},
 	"response_required": false,
-	"text": "'That's what I like to hear! So, first thing I need from you is just to make a start on signing some documents off. No need to worry about the specifics of them too much, we just need your oversight in order to tick off our sustainability targets.'"
+	"text": "'That's what I like to hear! So, first thing I need from you is just to make a start on signing some documents off. No need to worry about the specifics, we just need your oversight in order to tick off our sustainability targets.'"
 	},
 	{
 	  "conditions": {
@@ -62,7 +62,7 @@
 		"visual": "template_visual"
 		},
 	"response_required": true,
-	"text": "The first binder contains an analysis of public discourse around NewVision's planned new data centre in San Toro. 86% of the discourse gathered displayed a negative tone towards the project, 10% harboured neutral sentiment, and only 4% contained positive sentiment.\n\n You notice the analysis concludes, '14% of people are excited at the prospect of a new centre, and see the benefits it can provide to users of NewVision's suite of internet services'.\n\n You turn to the sign off page, it only needs your signature and the research will go straight to PR and marketing for them to incorporate it into NewVision's public-facing strategy."
+	"text": "The first binder contains an analysis of public discourse around NewVision's planned new data centre in San Toro. 86% of the discourse gathered displayed a negative tone towards the project, 10% harboured neutral sentiment, and only 4% contained positive sentiment.\n\nYou notice the analysis concludes, '14% of people are excited at the prospect of a new centre, and see the benefits it can provide to users of NewVision's suite of internet services'.\n\nYou turn to the sign off page, it only needs your signature and the research will go straight to PR and marketing for them to incorporate it into NewVision's public-facing strategy."
 	}
 	]
   },
