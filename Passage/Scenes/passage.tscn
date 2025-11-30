@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://b8y1sx73av7wx"]
 
 [ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
-[ext_resource type="Texture2D" uid="uid://vhcbiwc7exb7" path="res://Images/Layout/Frame.png" id="2_qapux"]
+[ext_resource type="Texture2D" uid="uid://vhcbiwc7x8v7wx" path="res://Images/Layout/Frame.png" id="2_qapux"]
 [ext_resource type="PackedScene" uid="uid://cdc48adan4r4r" path="res://WordGrid/word_grid.tscn" id="2_w2v17"]
 [ext_resource type="Texture2D" uid="uid://bed4xa1mc6qar" path="res://Images/generic/MorningASCII.png" id="3_qapux"]
 [ext_resource type="Script" uid="uid://bmrgcsgsan1jp" path="res://Passage/Scenes/visuals_i.gd" id="4_q5d60"]
@@ -24,16 +24,19 @@ passage_json_files_folder = "res://JSON Files/"
 [node name="Frame" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
 texture = ExtResource("2_qapux")
+metadata/edit_lock = true
 
 [node name="VisualsV" type="VideoStreamPlayer" parent="."]
+offset_top = -2.0
 offset_right = 2560.0
-offset_bottom = 1440.0
+offset_bottom = 1438.0
 autoplay = true
 loop = true
 
 [node name="VisualsI" type="TextureRect" parent="."]
+offset_top = -2.0
 offset_right = 2560.0
-offset_bottom = 1440.0
+offset_bottom = 1438.0
 size_flags_stretch_ratio = 0.0
 texture = ExtResource("3_qapux")
 stretch_mode = 2
@@ -42,6 +45,7 @@ script = ExtResource("4_q5d60")
 [node name="FramePicture" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
 texture = ExtResource("5_6u3mc")
+metadata/edit_lock = true
 
 [node name="OutputControl" type="Control" parent="."]
 layout_mode = 3
@@ -50,6 +54,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="OutputScroll" type="ScrollContainer" parent="OutputControl"]
+clip_contents = false
 layout_mode = 0
 offset_left = 1952.0
 offset_top = 252.0
@@ -57,6 +62,7 @@ offset_right = 2528.0
 offset_bottom = 1019.0
 
 [node name="OutputBox" type="RichTextLabel" parent="OutputControl/OutputScroll"]
+clip_contents = false
 custom_minimum_size = Vector2(150, 100)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -67,6 +73,7 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus 
 
 Suspendisse luctus feugiat est non luctus. Morbi viverra hendrerit tincidunt. Nulla condimentum, velit condimentum gravida rutrum, leo mauris fermentum justo, id scelerisque neque ipsum sed risus. Nunc pellentesque diam laoreet, tincidunt neque et, aliquam massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tempor libero lectus, nec commodo nisl mattis id. Nulla facilisi. Aliquam scelerisque nunc at augue commodo porttitor. Phasellus neque erat, luctus sed nisl sit amet, egestas convallis ipsum. Praesent nec sodales enim, ut ultricies risus. Sed erat justo, finibus at diam et, lacinia iaculis neque. Morbi lectus lorem, ultrices eu volutpat non, ultrices vitae dui. Suspendisse luctus euismod elementum. Proin eget varius erat, vel tincidunt augue."
 scroll_active = false
+metadata/edit_lock = true
 
 [node name="ReputationManager" type="Node" parent="."]
 script = ExtResource("5_vfmde")
