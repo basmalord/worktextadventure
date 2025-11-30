@@ -32,7 +32,7 @@ func generate_frames():
 		var output_path_absolute: String = frames_folder_absolute_path + "/" + video_frames_name + frame_suffix + str(int(i)) + image_format
 		print(output_path_absolute)
 		extract_frame(visual_location, int(i) * frame_length_s, output_path_absolute)
-		image_to_asci(output_path_godot)
+		image_to_ascii(output_path_godot)
 		if i == 9:
 			print("worked")
 			call_ffmpeg_to_generate_video_from_frames()
