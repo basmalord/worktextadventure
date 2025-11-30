@@ -1,14 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://b8y1sx73av7wx"]
+[gd_scene load_steps=12 format=3 uid="uid://b8y1sx73av7wx"]
 
 [ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
-[ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="2_euac8"]
+[ext_resource type="Texture2D" uid="uid://vhcbiwc7exb7" path="res://Images/Layout/Frame.png" id="2_qapux"]
 [ext_resource type="PackedScene" uid="uid://cdc48adan4r4r" path="res://WordGrid/word_grid.tscn" id="2_w2v17"]
+[ext_resource type="Texture2D" uid="uid://bed4xa1mc6qar" path="res://Images/generic/MorningASCII.png" id="3_qapux"]
 [ext_resource type="Script" uid="uid://bmrgcsgsan1jp" path="res://Passage/Scenes/visuals_i.gd" id="4_q5d60"]
+[ext_resource type="Texture2D" uid="uid://burrfrjonqp5x" path="res://Images/Layout/FramePicture.png" id="5_6u3mc"]
+[ext_resource type="FontFile" uid="uid://dd1wfqwm0sal0" path="res://Fonts/ModernDOS8x16.ttf" id="5_an5kf"]
 [ext_resource type="Script" uid="uid://b03qqm27ogvut" path="res://ManagerNodes/ReputationManager/reputation_manager.gd" id="5_vfmde"]
 [ext_resource type="PackedScene" uid="uid://bor8i0t3t21x8" path="res://ManagerNodes/ProjectProgressManager/ProjectProgressManager.tscn" id="6_euac8"]
 [ext_resource type="PackedScene" uid="uid://u6jgrwteg455" path="res://ManagerNodes/TimeManager/TimeManager.tscn" id="6_vfmde"]
 [ext_resource type="Script" uid="uid://bv5dtgk87m1b3" path="res://Passage/Scenes/continue_button.gd" id="9_an5kf"]
-[ext_resource type="Texture2D" uid="uid://da7lmo1bsgd6v" path="res://Textures/borders.png" id="9_h0a17"]
 
 [node name="Passage" type="CanvasLayer" groups=["Passage"]]
 script = ExtResource("1_y57or")
@@ -16,21 +18,32 @@ state_conditions = {
 "jane_levitt": true,
 "promised": true
 }
-passage_json_file_location = "res://JSON Files/d3_arrive.txt"
+passage_json_file_location = "res://JSON Files/d1_wake_up.txt"
 passage_json_files_folder = "res://JSON Files/"
 
 [node name="Frame" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
+texture = ExtResource("2_qapux")
 metadata/_edit_lock_ = true
+
+[node name="VisualsV" type="VideoStreamPlayer" parent="."]
+offset_right = 2560.0
+offset_bottom = 1440.0
+autoplay = true
+loop = true
+
+[node name="VisualsI" type="TextureRect" parent="."]
+offset_right = 2560.0
+offset_bottom = 1440.0
+size_flags_stretch_ratio = 0.0
+texture = ExtResource("3_qapux")
+stretch_mode = 2
+script = ExtResource("4_q5d60")
 
 [node name="FramePicture" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
+texture = ExtResource("5_6u3mc")
 metadata/_edit_lock_ = true
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 960.0
-offset_bottom = 720.0
-texture = ExtResource("9_h0a17")
 
 [node name="OutputControl" type="Control" parent="."]
 layout_mode = 3
@@ -40,36 +53,22 @@ offset_bottom = 40.0
 
 [node name="OutputScroll" type="ScrollContainer" parent="OutputControl"]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 565.0
-offset_right = 585.0
-offset_bottom = 715.0
+offset_left = 1952.0
+offset_top = 252.0
+offset_right = 2528.0
+offset_bottom = 1019.0
 
 [node name="OutputBox" type="RichTextLabel" parent="OutputControl/OutputScroll"]
 custom_minimum_size = Vector2(150, 100)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_fonts/normal_font = ExtResource("2_euac8")
-theme_override_font_sizes/normal_font_size = 18
-text = "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+theme_override_fonts/normal_font = ExtResource("5_an5kf")
+theme_override_font_sizes/normal_font_size = 32
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus vitae erat eu vehicula. Cras ut velit id purus placerat vehicula quis id ligula. Vestibulum interdum dapibus auctor. Nullam tellus urna, feugiat at magna at, egestas maximus massa. Vivamus mattis lacus vel metus gravida, hendrerit ultrices ex convallis. Aenean non fringilla orci. Cras semper commodo ipsum, ut pellentesque erat semper non. Quisque et massa et erat semper aliquam auctor non justo. Pellentesque vestibulum egestas turpis, eget feugiat tellus sodales in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent dictum dui non magna rhoncus, non sagittis tellus placerat. Cras vitae condimentum nunc, a efficitur elit. Proin vulputate, nisl at sollicitudin efficitur, metus erat ultrices odio, sit amet mattis lacus elit sit amet elit. Vestibulum auctor elementum consequat.
+
+Suspendisse luctus feugiat est non luctus. Morbi viverra hendrerit tincidunt. Nulla condimentum, velit condimentum gravida rutrum, leo mauris fermentum justo, id scelerisque neque ipsum sed risus. Nunc pellentesque diam laoreet, tincidunt neque et, aliquam massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tempor libero lectus, nec commodo nisl mattis id. Nulla facilisi. Aliquam scelerisque nunc at augue commodo porttitor. Phasellus neque erat, luctus sed nisl sit amet, egestas convallis ipsum. Praesent nec sodales enim, ut ultricies risus. Sed erat justo, finibus at diam et, lacinia iaculis neque. Morbi lectus lorem, ultrices eu volutpat non, ultrices vitae dui. Suspendisse luctus euismod elementum. Proin eget varius erat, vel tincidunt augue."
 scroll_active = false
-
-[node name="VisualsV" type="VideoStreamPlayer" parent="."]
-offset_top = -2.0
-offset_right = 2560.0
-offset_bottom = 1438.0
-autoplay = true
-loop = true
-metadata/_edit_lock_ = true
-
-[node name="VisualsI" type="TextureRect" parent="."]
-offset_top = -2.0
-offset_right = 2560.0
-offset_bottom = 1438.0
-size_flags_stretch_ratio = 0.0
-stretch_mode = 2
-script = ExtResource("4_q5d60")
 metadata/_edit_lock_ = true
 
 [node name="ReputationManager" type="Node" parent="."]
@@ -81,33 +80,33 @@ reputation_type_dictionary = Dictionary[String, int]({
 metadata/_custom_type_script = "uid://b03qqm27ogvut"
 
 [node name="TimeManager" parent="." instance=ExtResource("6_vfmde")]
-offset_left = -1792.0
-offset_top = 425.0
-offset_right = -1792.0
-offset_bottom = 425.0
+offset_left = -2639.0
+offset_top = 477.0
+offset_right = -2639.0
+offset_bottom = 477.0
 
 [node name="ProjectProgressManager" parent="." instance=ExtResource("6_euac8")]
-offset_left = -2485.0
-offset_top = -74.0
-offset_right = -2485.0
-offset_bottom = -74.0
+offset_left = -2947.0
+offset_top = 169.0
+offset_right = -2947.0
+offset_bottom = 169.0
 progress = 0
 
 [node name="ContinueButton" type="Button" parent="."]
-offset_left = 664.0
-offset_top = 253.0
-offset_right = 872.0
-offset_bottom = 287.0
-theme_override_fonts/font = ExtResource("2_euac8")
-theme_override_font_sizes/font_size = 50
+offset_left = 2096.0
+offset_top = 149.0
+offset_right = 2384.0
+offset_bottom = 189.0
+theme_override_fonts/font = ExtResource("5_an5kf")
+theme_override_font_sizes/font_size = 32
 text = "Continue
 "
 script = ExtResource("9_an5kf")
 
 [node name="WordGrid" parent="." instance=ExtResource("2_w2v17")]
-offset_left = 630.0
-offset_top = 555.0
-offset_right = 670.0
-offset_bottom = 595.0
+offset_left = 2242.0
+offset_top = 1115.0
+offset_right = 2242.0
+offset_bottom = 1115.0
 
 [connection signal="pressed" from="ContinueButton" to="." method="continue_passage"]

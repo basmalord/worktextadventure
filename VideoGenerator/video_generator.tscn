@@ -5,10 +5,10 @@
 [node name="ASCIIVideoGenerator" type="Node2D"]
 position = Vector2(478, -178)
 script = ExtResource("1_pxhot")
-frames_folder_path = "res://Video/d1/driving3/"
-frames_folder_absolute_path = "C:/Users/theob/Documents/worktextadventure/Video/d1/driving3/"
-visual_location = "res://Video/d1/driving3/driving3.ogv"
-max_character_width = 100
+new_video_frame_rate = 30
+frames_folder_path = "res://Video/Generic/DrivingSource/Drive.ogv"
+frames_folder_absolute_path = "C:/Users/Jake/OneDrive/Documents/GitHub/worktextadventure/Video/Generic/TypingSource"
+video_frames_name = ""
+visual_location = "res://Video/Generic/TypingSource/0001"
 blank_space_detailing = 5
-is_video = true
-font_path = "res://Fonts/ModernDOS8x8.ttf"
+use_custom_file_name = true

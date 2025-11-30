@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cpwy6y4vgws5u" path="res://WordGrid/word_button_grid.gd" id="1_0jfsl"]
 [ext_resource type="Script" uid="uid://c2r8r2o6iun2f" path="res://WordGrid/Word/word_button.gd" id="1_y8ttd"]
-[ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="3_oa5c6"]
+[ext_resource type="FontFile" uid="uid://dd1wfqwm0sal0" path="res://Fonts/ModernDOS8x16.ttf" id="3_oa5c6"]
 
 [node name="WordGrid" type="Control"]
 layout_mode = 3
@@ -11,71 +11,121 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 72.0
+offset_right = 12.0
+offset_bottom = 176.0
+grow_horizontal = 2
 columns = 3
 script = ExtResource("1_0jfsl")
 
 [node name="WordButton" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Ethics"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="WordButton2" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Environment"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="WordButton3" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Profit"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
+[node name="Control" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
 [node name="WordButton4" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Success"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="WordButton5" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Relaxation"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="WordButton6" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Compassion"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
+[node name="Control4" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control5" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control6" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
 [node name="WordButton7" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Realism"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="WordButton8" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Dedication"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="WordButton9" type="Button" parent="GridContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oa5c6")
+theme_override_font_sizes/font_size = 32
 script = ExtResource("1_y8ttd")
 word = "Enthusiasm"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 59.0
-offset_top = -23.0
-offset_right = 179.0
+offset_left = -120.0
+offset_right = 120.0
+offset_bottom = 32.0
 theme_override_fonts/font = ExtResource("3_oa5c6")
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 32
 text = "Sentinment Grid"
+horizontal_alignment = 1
+vertical_alignment = 1
