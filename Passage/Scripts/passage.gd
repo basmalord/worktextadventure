@@ -59,7 +59,7 @@ func continue_passage():
 		print("IT IS TRUE")
 		reset_continues()
 		if data["passage_name"] == "d3_pre_event":
-			pass
+			print("FOUND PRE EVENT")
 		_on_input_box_text_submitted("Ethics")
 	print(state_conditions)
 

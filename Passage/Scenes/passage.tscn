@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b8y1sx73av7wx"]
+[gd_scene load_steps=9 format=3 uid="uid://b8y1sx73av7wx"]
 
 [ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
 [ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="2_euac8"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://bor8i0t3t21x8" path="res://ManagerNodes/ProjectProgressManager/ProjectProgressManager.tscn" id="6_euac8"]
 [ext_resource type="PackedScene" uid="uid://u6jgrwteg455" path="res://ManagerNodes/TimeManager/TimeManager.tscn" id="6_vfmde"]
 [ext_resource type="Script" uid="uid://bv5dtgk87m1b3" path="res://Passage/Scenes/continue_button.gd" id="9_an5kf"]
-[ext_resource type="Texture2D" uid="uid://da7lmo1bsgd6v" path="res://Textures/borders.png" id="9_h0a17"]
 
 [node name="Passage" type="CanvasLayer" groups=["Passage"]]
 script = ExtResource("1_y57or")
@@ -23,14 +22,24 @@ passage_json_files_folder = "res://JSON Files/"
 position = Vector2(1280, 720)
 metadata/_edit_lock_ = true
 
+[node name="VisualsV" type="VideoStreamPlayer" parent="."]
+offset_top = -2.0
+offset_right = 2560.0
+offset_bottom = 1438.0
+autoplay = true
+loop = true
+
+[node name="VisualsI" type="TextureRect" parent="."]
+offset_top = -2.0
+offset_right = 2560.0
+offset_bottom = 1438.0
+size_flags_stretch_ratio = 0.0
+stretch_mode = 2
+script = ExtResource("4_q5d60")
+
 [node name="FramePicture" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
 metadata/_edit_lock_ = true
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 960.0
-offset_bottom = 720.0
-texture = ExtResource("9_h0a17")
 
 [node name="OutputControl" type="Control" parent="."]
 layout_mode = 3
@@ -55,22 +64,6 @@ size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("2_euac8")
 theme_override_font_sizes/normal_font_size = 18
 text = "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-
-[node name="VisualsV" type="VideoStreamPlayer" parent="."]
-offset_top = -2.0
-offset_right = 2560.0
-offset_bottom = 1438.0
-autoplay = true
-loop = true
-metadata/_edit_lock_ = true
-
-[node name="VisualsI" type="TextureRect" parent="."]
-offset_top = -2.0
-offset_right = 2560.0
-offset_bottom = 1438.0
-size_flags_stretch_ratio = 0.0
-stretch_mode = 2
-script = ExtResource("4_q5d60")
 metadata/_edit_lock_ = true
 
 [node name="ReputationManager" type="Node" parent="."]
