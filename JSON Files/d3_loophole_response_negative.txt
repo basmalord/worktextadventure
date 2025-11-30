@@ -1,0 +1,181 @@
+{
+"passage_name": "d3_loophole_response_negative",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": 0,
+			"picked_syber": true,
+			"family": 0
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"mentioned_by_ftc": false,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "You can't let the FTC have anything on NewVision before he appears before the house. That would be a PR disaster.\n\nYou draft an outright denial of NewVision's utilisation of the carbon permits loophole. Let's hope there's not subpoena to follow!"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 1,
+			"family": 0
+		},
+		"progress": 0,
+		"mentioned_by_ftc": false,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "NewVision's goals have already been hindered enough by external climate considerations, if you were to return a positive response this would only give the FTC more licence to impose greater restrictions. And Dirk would hate that.\n\nIn fact, you know what Dirk would say, he'd say:\n\n'Look, carbon permits are all well and good, but they stifle companies like NewVision. Make it harder to innovate and build data centres in San Toro'\n\nYou draft a response outlining this sentiment."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Linda arrives at your desk to collect your response.\n\n'Dirk's not got time to review this one, so I'm sending it straight out.'\n\nAnd with that she heads towards the press office, repsonse in hand."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 2
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "You turn to your final piece of work for the day, something more lighthearated. It's the nominations for a staff competition for new office posters.\n\nThey must have set up the competition in anticipation for your arrival; there's three of them, and they're all themed around NewVision's environmental commitments."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 3
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "The first poster depicts a cat hanging from a bar with a forest fire in the back ground. At the bottom of the image, text reads:\n\n'Hang in there!'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 4
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "The second poster depicts Uncle Sam pointing towards the viewer. At the bottom of the image, text reads:\n\n'The environment needs you!'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 5
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "The third poster bares no imagery. Highly minimalist, large text reads:\n\n'A NewVision for Mother Earth'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 6
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "The first poster depicts a cat hanging from a bar with a forest fire in the back ground. At the bottom of the image, text reads:\n\n'Hang in there!'"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

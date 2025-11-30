@@ -21,7 +21,7 @@
 		"visual": "template_visual"
 		},
 	"response_required": true,
-	"text": "It's an FOI request from Damien Rees' office- the head of the FTC! He's standing before the house tomorrow and he's somehow caught wind of the accounting loop-hole Mark mentioned yesterday! He's asking for comment on whether we use the loop hole!\n\nThe FTC response template you found in the dossier implies it is up to you to draft the note."
+	"text": "It's a note from Damien Rees' office- the head of the FTC! He's standing before the house tomorrow and he's somehow caught wind of the accounting loop-hole Mark mentioned yesterday! He's asking for comment on whether NewVision makes use the loop hole.\n\nThe FTC response template you found in the dossier implies it is up to you to draft the note."
 	},
 	 {
 	  "conditions": {
