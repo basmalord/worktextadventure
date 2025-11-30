@@ -58,6 +58,8 @@ func continue_passage():
 	elif continue_button.continue_passage_check == true:
 		print("IT IS TRUE")
 		reset_continues()
+		if data["passage_name"] == "d3_pre_event":
+			pass
 		_on_input_box_text_submitted("Ethics")
 	print(state_conditions)
 

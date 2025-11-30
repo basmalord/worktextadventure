@@ -83,7 +83,7 @@
 		"visual": "template_visual"
 		},
 	"response_required": false,
-	"text": "You turn to your final piece of work for the day, something more lighthearated. It's the nominations for a staff competition for new office posters.\n\nThey must have set up the competition in anticipation for your arrival; there's three of them, and they're all themed around NewVision's environmental commitments."
+	"text": "You turn to your final piece of work for the day, something more lighthearated. It's the nominations for a staff competition for new office posters.\n\nThey must have set up the competition in anticipation for your arrival; there's three of them, and they're all themed around NewVision's environmental commitments.\n\nA note details that as Director fo Environmental and Sustainability Compliance, you have the honour of choosing which poster will be reprinted and plastered around the office."
 	},
 	 {
 	  "conditions": {

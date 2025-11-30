@@ -1,0 +1,125 @@
+{
+"passage_name": "d3_pre_event",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": -0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"mentioned_by_ftc": true,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d1/dirk_desk.png"
+		},
+	"response_required": false,
+	"text": "As quickly as Linda enters the office, she leaves. You swear you could see a tear in her eye before she heads off down the hall.\n\nSoon after Dirk steps out, striding forcefully towards your desk.\n\n'Great slection on the office posters, buddy! They might not be good for anything else, but the NewVision guys sure know how to waste company time- kidding! Your face!\n\nBut seriously, I've had to let Linda go. That FTC response you drafted didn't see my desk before it went out, now we've got to do damage control. Don't worry I've noted your involvement too, maybe you're still quite a ways from getting that boat after all!'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Before long it's close to five o'clock and you see Dirk striding forcefully towards your desk.\n\n'Great slection on the office posters, buddy! They might not be good for anything else, but the NewVision guys sure know how to waste company time- kidding! Your face!'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"jane_levitt": true,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "'Now, it's time to meet Jane Levitt, superstar!'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"performance_review": true,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "'Now, time for your performance review, buddy! I promise I won't go easy!'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"working_late": true,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "'Now, have I got a working-late job for you! Linda might ahve already told you, but we've got the reps from San Toro in the building for some negotiations. Since a lot of the hold up revolves around the pesky environmental details, I need you in there with me.\n\nLet's god!'"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

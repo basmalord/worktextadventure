@@ -5,8 +5,8 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": 0,
-			"family": 0
+			"manager": -100,
+			"family": -100
 		},
 		"progress": 0,
 		"continue": 0
@@ -17,15 +17,37 @@
 			"family": 0
 		},
 		"progress": 0,
+		"cat_poster": true,
 		"visual": "template_visual"
 		},
-	"response_required": true,
-	"text": "template"
+	"response_required": false,
+	"text": "Whoever created this has a real artistic flair, they've evoked the immediacy of the climate crisis as aptly as anyone who loves this green Earth. How you'd love to meet the creator."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Just as you finish deciding, Linda comes to check on your decision.\n\nYou pass her the cat poster.\n\n'Ugh, I can't believe you went with Mark's. That guy's so full of himself. Still, Dirk'll be happy you've made a quick decision on this.\n\nAnd with that, Linda sets off with the poster in hand."
 	}
 	]
   },
   "inputs": {
-	"ethics": { "passage_name": "" },
+	"ethics": { "passage_name": "d3_pre_event" },
 	"environment": { "passage_name": "" },
 	"success": { "passage_name": "" },
 	"relaxation": { "passage_name": "" },

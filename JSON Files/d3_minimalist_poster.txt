@@ -5,8 +5,8 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": 0,
-			"family": 0
+			"manager": -100,
+			"family": -100
 		},
 		"progress": 0,
 		"continue": 0
@@ -19,13 +19,34 @@
 		"progress": 0,
 		"visual": "template_visual"
 		},
-	"response_required": true,
-	"text": "template"
+	"response_required": false,
+	"text": "An excellent piece of branded, no frills design. The minmalist poster will act as a clear indicator to all NewVision staff.\n\nOur vision.\n\nIs a NewVision.\n\nFor Mother Earth."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Just as you finish deciding, Linda comes to check on your decision.\n\nYou pass her the minimalist poster.\n\n'Ooo, very clean is this one- I've got to say it's my favourite of the three! I think Dirk will like this. I'll get this to him now.'\n\nAnd with that, Linda sets off with the poster in hand."
 	}
 	]
   },
   "inputs": {
-	"ethics": { "passage_name": "" },
+	"ethics": { "passage_name": "d3_pre_event" },
 	"environment": { "passage_name": "" },
 	"success": { "passage_name": "" },
 	"relaxation": { "passage_name": "" },

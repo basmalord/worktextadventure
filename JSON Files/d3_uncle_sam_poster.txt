@@ -5,8 +5,8 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": 0,
-			"family": 0
+			"manager": -100,
+			"family": -100
 		},
 		"progress": 0,
 		"continue": 0
@@ -19,13 +19,34 @@
 		"progress": 0,
 		"visual": "template_visual"
 		},
-	"response_required": true,
-	"text": "template"
+	"response_required": false,
+	"text": "Bold.\n\nBeautiful.\n\nAmerican. This'll get the troops riled up for the environment!"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Just as you finish deciding, Linda comes to check on your decision.\n\nYou pass her the patriotic poster.\n\n'Quite the patriot you are, can't say it's to my taste, but I'll get this to Dirk right away.'\n\nAnd with that, Linda sets off with the poster in hand."
 	}
 	]
   },
   "inputs": {
-	"ethics": { "passage_name": "" },
+	"ethics": { "passage_name": "d3_pre_event" },
 	"environment": { "passage_name": "" },
 	"success": { "passage_name": "" },
 	"relaxation": { "passage_name": "" },
