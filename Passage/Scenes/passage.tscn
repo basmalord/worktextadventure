@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c8etw3tx73rfi"]
+[gd_scene load_steps=10 format=3 uid="uid://b8y1sx73av7wx"]
 
 [ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
 [ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="2_euac8"]
@@ -12,8 +12,20 @@
 
 [node name="Passage" type="CanvasLayer" groups=["Passage"]]
 script = ExtResource("1_y57or")
-passage_json_file_location = "res://JSON Files/d1_wake_up.txt"
+state_conditions = {
+"jane_levitt": true,
+"promised": true
+}
+passage_json_file_location = "res://JSON Files/d3_arrive.txt"
 passage_json_files_folder = "res://JSON Files/"
+
+[node name="Frame" type="Sprite2D" parent="."]
+position = Vector2(1280, 720)
+metadata/_edit_lock_ = true
+
+[node name="FramePicture" type="Sprite2D" parent="."]
+position = Vector2(1280, 720)
+metadata/_edit_lock_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 960.0
@@ -44,22 +56,21 @@ text = "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem 
 scroll_active = false
 
 [node name="VisualsV" type="VideoStreamPlayer" parent="."]
-offset_left = 28.0
-offset_top = 35.999992
-offset_right = 1308.0
-offset_bottom = 936.0
-scale = Vector2(0.44886738, 0.44886738)
+offset_top = -2.0
+offset_right = 2560.0
+offset_bottom = 1438.0
 autoplay = true
 loop = true
+metadata/_edit_lock_ = true
 
 [node name="VisualsI" type="TextureRect" parent="."]
-offset_left = 63.0
-offset_top = 18.0
-offset_right = 103.0
-offset_bottom = 58.0
+offset_top = -2.0
+offset_right = 2560.0
+offset_bottom = 1438.0
 size_flags_stretch_ratio = 0.0
 stretch_mode = 2
 script = ExtResource("4_q5d60")
+metadata/_edit_lock_ = true
 
 [node name="ReputationManager" type="Node" parent="."]
 script = ExtResource("5_vfmde")
