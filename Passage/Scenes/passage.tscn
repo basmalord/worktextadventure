@@ -13,11 +13,7 @@
 
 [node name="Passage" type="CanvasLayer" groups=["Passage"]]
 script = ExtResource("1_y57or")
-state_conditions = {
-"performance_review": true,
-"promised": true
-}
-passage_json_file_location = "res://JSON Files/d3_arrive.txt"
+passage_json_file_location = "res://JSON Files/d1_wake_up.txt"
 passage_json_files_folder = "res://JSON Files/"
 
 [node name="TextureRect" type="TextureRect" parent="."]
