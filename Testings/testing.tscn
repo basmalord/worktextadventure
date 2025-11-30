@@ -1,0 +1,128 @@
+[gd_scene load_steps=12 format=3 uid="uid://ot7pjbh1rhyw"]
+
+[ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
+[ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="2_euac8"]
+[ext_resource type="VideoStream" uid="uid://o72mmjio63tn" path="res://Video/asciitest2.ogv" id="2_l4bus"]
+[ext_resource type="Texture2D" uid="uid://c1u4kprsjckjn" path="res://Images/FramePicture.png" id="2_qapux"]
+[ext_resource type="PackedScene" uid="uid://cdc48adan4r4r" path="res://WordGrid/word_grid.tscn" id="2_w2v17"]
+[ext_resource type="FontFile" uid="uid://dd1wfqwm0sal0" path="res://Fonts/ModernDOS8x16.ttf" id="4_an5kf"]
+[ext_resource type="Script" uid="uid://bmrgcsgsan1jp" path="res://Passage/Scenes/visuals_i.gd" id="4_q5d60"]
+[ext_resource type="Script" uid="uid://b03qqm27ogvut" path="res://ManagerNodes/ReputationManager/reputation_manager.gd" id="5_vfmde"]
+[ext_resource type="PackedScene" uid="uid://bor8i0t3t21x8" path="res://ManagerNodes/ProjectProgressManager/ProjectProgressManager.tscn" id="6_euac8"]
+[ext_resource type="PackedScene" uid="uid://u6jgrwteg455" path="res://ManagerNodes/TimeManager/TimeManager.tscn" id="6_vfmde"]
+[ext_resource type="Texture2D" uid="uid://vhcbiwc7exb7" path="res://Images/Frame.png" id="9_h0a17"]
+
+[node name="Passage" type="CanvasLayer" groups=["Passage"]]
+script = ExtResource("1_y57or")
+passage_json_file_location = "res://JSON Files/d1_wake_up.txt"
+passage_json_files_folder = "res://JSON Files/"
+
+[node name="Frame" type="Sprite2D" parent="."]
+position = Vector2(1280, 720)
+texture = ExtResource("9_h0a17")
+metadata/_edit_lock_ = true
+
+[node name="VisualsI" type="TextureRect" parent="."]
+offset_top = -2.0
+offset_right = 2560.0
+offset_bottom = 1438.0
+size_flags_stretch_ratio = 0.0
+stretch_mode = 2
+script = ExtResource("4_q5d60")
+metadata/_edit_lock_ = true
+
+[node name="VisualsV" type="VideoStreamPlayer" parent="."]
+offset_top = -2.0
+offset_right = 2560.0
+offset_bottom = 1438.0
+stream = ExtResource("2_l4bus")
+autoplay = true
+loop = true
+metadata/_edit_lock_ = true
+
+[node name="FramePicture" type="Sprite2D" parent="."]
+position = Vector2(1280, 720)
+texture = ExtResource("2_qapux")
+metadata/_edit_lock_ = true
+
+<<<<<<< HEAD
+[node name="OutputBox" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(100, 500)
+offset_left = 1952.0
+offset_top = 252.0
+offset_right = 2528.0
+offset_bottom = 1020.0
+theme_override_fonts/normal_font = ExtResource("4_an5kf")
+theme_override_font_sizes/normal_font_size = 32
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras porttitor felis vel facilisis tempus. Nulla euismod nulla sit amet vulputate ultrices. Praesent ut auctor tellus. Proin dignissim sit amet enim sed pretium. Suspendisse vel sodales tellus. In vestibulum velit metus, ut egestas mauris ultrices id. Phasellus vel pellentesque odio. Nulla facilisi. Quisque at lorem vitae eros lacinia finibus non nec lacus. Curabitur pretium dictum convallis. Curabitur at leo odio. Suspendisse ligula metus, semper ac ligula ac, pharetra luctus ipsum. Phasellus ac accumsan sem. Quisque aliquam vulputate tellus, non hendrerit ex pretium eu. Aenean tempor lectus vel dapibus pharetra."
+=======
+[node name="OutputControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OutputScroll" type="ScrollContainer" parent="OutputControl"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 565.0
+offset_right = 585.0
+offset_bottom = 715.0
+
+[node name="OutputBox" type="RichTextLabel" parent="OutputControl/OutputScroll"]
+custom_minimum_size = Vector2(150, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("2_euac8")
+theme_override_font_sizes/normal_font_size = 18
+text = "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
+scroll_active = false
+>>>>>>> 9c28553a67b81b50eb1fc9abb6920f102c6598a9
+
+[node name="InputBox" type="LineEdit" parent="."]
+offset_left = -1336.0
+offset_top = -775.0
+offset_right = -1267.44
+offset_bottom = -744.0
+max_length = 10
+
+[node name="ReputationManager" type="Node" parent="."]
+script = ExtResource("5_vfmde")
+reputation_type_dictionary = Dictionary[String, int]({
+"family": 0,
+"manager": 0
+})
+metadata/_custom_type_script = "uid://b03qqm27ogvut"
+
+[node name="TimeManager" parent="." instance=ExtResource("6_vfmde")]
+offset_left = -2768.0
+offset_top = -81.0
+offset_right = -2768.0
+offset_bottom = -81.0
+
+[node name="ProjectProgressManager" parent="." instance=ExtResource("6_euac8")]
+offset_left = -2715.0
+offset_top = 161.0
+offset_right = -2715.0
+offset_bottom = 161.0
+progress = 0
+
+[node name="ContinueButton" type="Button" parent="."]
+offset_left = 2122.0
+offset_top = 153.0
+offset_right = 2330.0
+offset_bottom = 187.0
+theme_override_fonts/font = ExtResource("2_euac8")
+theme_override_font_sizes/font_size = 32
+text = "Continue
+"
+
+[node name="WordGrid" parent="." instance=ExtResource("2_w2v17")]
+offset_left = 2013.0
+offset_top = 1135.0
+offset_right = 2053.0
+offset_bottom = 1175.0
+
+[connection signal="text_submitted" from="InputBox" to="." method="_on_input_box_text_submitted"]
+[connection signal="pressed" from="ContinueButton" to="." method="continue_passage"]
