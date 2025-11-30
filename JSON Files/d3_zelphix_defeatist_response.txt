@@ -1,0 +1,60 @@
+{
+"passage_name": "3_zelphix_defeatist_response",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"zel_response_defeatist": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Game over man, game over! From an environmental perspective, of course. The specs of Zelphix's offer are truly unmatchable for NewVision, especially at short notice.\n\nYou draft a defnsive comms strategy, geared towards streamlining public communication away from comparisons between NewVision and Zelphix. As far as Mother Earth's conce't let anybody catch you thinking that.\n\nEspecially not Linda, who has suddenly appeared at your desk."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": -1,
+			"family": 0
+		},
+		"progress": -10,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "'You made short work with that one, I'll get this over to Dirk right away.'\n\nShe carries the Zelphix dosier and your draft towards Dirk's office.\n\nYou unlaod the next dosier onto your desk."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d3_loophole" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

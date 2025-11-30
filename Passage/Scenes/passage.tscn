@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ot7pjbh1rhyw"]
+[gd_scene load_steps=11 format=3 uid="uid://ot7pjbh1rhyw"]
 
 [ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
 [ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="2_euac8"]
@@ -8,11 +8,16 @@
 [ext_resource type="Script" uid="uid://b03qqm27ogvut" path="res://ManagerNodes/ReputationManager/reputation_manager.gd" id="5_vfmde"]
 [ext_resource type="PackedScene" uid="uid://bor8i0t3t21x8" path="res://ManagerNodes/ProjectProgressManager/ProjectProgressManager.tscn" id="6_euac8"]
 [ext_resource type="PackedScene" uid="uid://u6jgrwteg455" path="res://ManagerNodes/TimeManager/TimeManager.tscn" id="6_vfmde"]
+[ext_resource type="Script" uid="uid://bv5dtgk87m1b3" path="res://Passage/Scenes/continue_button.gd" id="9_an5kf"]
 [ext_resource type="Texture2D" uid="uid://da7lmo1bsgd6v" path="res://Textures/borders.png" id="9_h0a17"]
 
 [node name="Passage" type="CanvasLayer" groups=["Passage"]]
 script = ExtResource("1_y57or")
-passage_json_file_location = "res://JSON Files/d1_wake_up.txt"
+state_conditions = {
+"performance_review": true,
+"promised": true
+}
+passage_json_file_location = "res://JSON Files/d3_arrive.txt"
 passage_json_files_folder = "res://JSON Files/"
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -43,13 +48,6 @@ theme_override_font_sizes/normal_font_size = 18
 text = "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
 scroll_active = false
 
-[node name="InputBox" type="LineEdit" parent="."]
-offset_left = -1336.0
-offset_top = -775.0
-offset_right = -1267.44
-offset_bottom = -744.0
-max_length = 10
-
 [node name="VisualsV" type="VideoStreamPlayer" parent="."]
 offset_left = 28.0
 offset_top = 35.999992
@@ -73,7 +71,7 @@ script = ExtResource("4_q5d60")
 script = ExtResource("5_vfmde")
 reputation_type_dictionary = Dictionary[String, int]({
 "family": 0,
-"manager": 0
+"manager": 1
 })
 metadata/_custom_type_script = "uid://b03qqm27ogvut"
 
@@ -99,6 +97,7 @@ theme_override_fonts/font = ExtResource("2_euac8")
 theme_override_font_sizes/font_size = 50
 text = "Continue
 "
+script = ExtResource("9_an5kf")
 
 [node name="WordGrid" parent="." instance=ExtResource("2_w2v17")]
 offset_left = 630.0
@@ -106,5 +105,4 @@ offset_top = 555.0
 offset_right = 670.0
 offset_bottom = 595.0
 
-[connection signal="text_submitted" from="InputBox" to="." method="_on_input_box_text_submitted"]
 [connection signal="pressed" from="ContinueButton" to="." method="continue_passage"]

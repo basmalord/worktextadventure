@@ -1,0 +1,59 @@
+{
+"passage_name": "d3_loophole",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"picked_syber": true,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "It's an FOI request from Damien Rees' office- the head of the FTC! He's standing before the house tomorrow and he's somehow caught wind of the accounting loop-hole Mark mentioned yesterday! He's asking for comment on whether we use the loop hole!\n\nThe FTC response template you found in the dossier implies it is up to you to draft the note."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "It's a note from Damien Rees' office- the head of the FTC! He's standing before the house tomorrow and wants the company's perspective on carbon permits!\n\nThe FTC response template you found in the dossier implies it is up to you to draft the note."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d3_loophole_response_positive" },
+	"environment": { "passage_name": "d3_loophole_response_positive" },
+	"success": { "passage_name": "d3_loophole_response_negative" },
+	"relaxation": { "passage_name": "d3_loophole_response_negative" },
+	"compassion": { "passage_name": "d3_loophole_response_positive" },
+	"realism": { "passage_name": "d3_loophole_response_negative" },
+	"dedication": { "passage_name": "d3_loophole_response_negative" },
+	"enthusiasm": { "passage_name": "d3_loophole_response_positive" },
+	"profit": { "passage_name": "d3_loophole_response_negative" }
+  }
+}

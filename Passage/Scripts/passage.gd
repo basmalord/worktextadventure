@@ -8,13 +8,12 @@ var amount_of_continue_presses: int = 0
 var passage_parts_array: Array = []
 var data: Dictionary
 var part_number: int
-var state_conditions: Dictionary = {}
+@export var state_conditions: Dictionary = {}
 var image_position
 @export var passage_json_file_location: String 
 @export var passage_json_files_folder: String 
 @onready var output_box: RichTextLabel = $OutputControl/OutputScroll/OutputBox
-@onready var input_box: LineEdit = $InputBox
-@onready var visuals: VideoStreamPlayer = $Visuals
+#@onready var visuals: VideoStreamPlayer = $Visuals
 @onready var reputation_manager: ReputationManager = $ReputationManager
 @onready var progress_manager: ProjectProgressManager = $ProjectProgressManager
 @onready var time_manager = $TimeManager
@@ -25,6 +24,7 @@ var image_position
 func _ready():
 	image_position = $VisualsI.position
 	load_passage()
+
 
 
 func load_passage(): #This loads the json file associated with the passage we want to access.
@@ -44,16 +44,23 @@ func load_passage(): #This loads the json file associated with the passage we wa
 		valid_inputs = data["inputs"]
 		input_strings = valid_inputs.keys()
 
+#func check_for_continue_passage(passage_data):
+	#var state = generate_state()
 func continue_passage():
-	print("AM CON PRES: ", amount_of_continue_presses)
-	passage_parts_array = data["passage_text"]["parts"]
-	var available_parts = get_available_parts(passage_parts_array, generate_state())
-	var part_text = available_parts[0]["text"]
-	part_number = passage_parts_array.find(available_parts[0])
-	check_for_response_required(data)
-	output_box.text = part_text
-	generate_changes()
-	print(generate_state())
+	if continue_button.continue_passage_check == false:
+		passage_parts_array = data["passage_text"]["parts"]
+		var available_parts = get_available_parts(passage_parts_array, generate_state())
+		var part_text = available_parts[0]["text"]
+		part_number = passage_parts_array.find(available_parts[0])
+		check_for_response_required(data)
+		output_box.text = part_text
+		generate_changes()
+	elif continue_button.continue_passage_check == true:
+		print("IT IS TRUE")
+		reset_continues()
+		_on_input_box_text_submitted("Ethics")
+	print(state_conditions)
+
 
 func check_for_response_required(passage_data):
 	if passage_data["passage_text"] == null:
@@ -72,6 +79,7 @@ func check_for_response_required(passage_data):
 				child.disabled = true
 		continue_button.show()
 		amount_of_continue_presses += 1
+
 
 func generate_state():
 	var state: Dictionary
@@ -96,9 +104,9 @@ func check_conditions(part: Dictionary, state: Dictionary): #takes a part of the
 					return false
 		elif key == "continue":
 			if state[key] != cond_val:
+				print("this is for continues: " ,amount_of_continue_presses, part["conditions"]["continue"])
 				return false
 		elif key == "progress":
-			print(state[key], cond_val)
 			if state[key] < cond_val:
 				return false
 		else:
@@ -158,11 +166,14 @@ func change_variables(changes_dict: Dictionary):
 						print("VISUAL RUNNING FOR V")
 					else:
 						print("ERROR: VISUAL RESOURCE PATH LOADS VALID DATA, BUT NOT TEXTURE2D OR VIDEOSTREAM")
+				"continue_passage":
+					continue_button.continue_passage_check = true
 				_:
 					if changes_dict[key] is not bool:
 						return
 					var condition_key = key
 					var condition_value = changes_dict[key]
+					print("ADDED: ", condition_key, "THIS IS VALUE: ", condition_value)
 					state_conditions[condition_key] = condition_value
 
 func reset_continues():
@@ -188,4 +199,5 @@ func _on_input_box_text_submitted(player_input_text: String) -> void: #This fire
 	if input_strings.find(player_input_text.to_lower()) != -1: #This checks whether the text inputted by the player matches any of the inputs associated with the passage.
 		passage_json_file_location = passage_json_files_folder + valid_inputs[player_input_text.to_lower()]["passage_name"] + ".txt"
 		print(valid_inputs[player_input_text.to_lower()]["passage_name"])
+		continue_button.continue_passage_check = false
 		load_passage()

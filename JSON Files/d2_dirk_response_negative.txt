@@ -8,7 +8,7 @@
 			"manager": -100,
 			"family": -100
 		},
-		"progress": 80,
+		"progress": 60,
 		"continue": 0
 	  },
 	"changes": {

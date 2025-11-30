@@ -1,0 +1,84 @@
+{
+"passage_name": "d3_wake_up_promise",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"performance_review": true,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 1
+		},
+		"progress": 0,
+		"visual": "template",
+		"continue_passage": true,
+		"promised": true
+		},
+	"response_required": false,
+	"text": "After your son goes to bed, you explain to your wife that you have a performance review at work. You promise that you will make it to the showing.\n\nYou both go to bed anxious as to whether you'd keep your promise, for your son's sake."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 1
+		},
+		"progress": 0,
+		"visual": "template_visual",
+		"continue_passage": true,
+		"promised": true
+		},
+	"response_required": false,
+	"text": "After your son goes to bed, you explain to your wife that Dirk has arranged for you to do an interview of the Jane Levitt show after work. You promise that you will make it to the showing.\n\nYou both go to bed anxious as to whether you'd keep your promise, for your son's sake."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"working_late": true,
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 1
+		},
+		"progress": 0,
+		"visual": "template_visual",
+		"continue_passage": true,
+		"promised": true
+		},
+	"response_required": false,
+	"text": "After your son goes to bed, you explain to your wife that Dirk has arranged for you to work late. You promise that you will make it to the showing.\n\nYou both go to bed anxious as to whether you'd keep your promise, for your son's sake."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d3_arrive" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

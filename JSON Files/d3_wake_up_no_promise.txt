@@ -1,0 +1,86 @@
+{
+"passage_name": "d3_wake_up_no_promise",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"performance_review": true,
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": -1
+		},
+		"progress": 0,
+		"visual": "res://Video/d1/door_open/door_open.ogv",
+		"promised": false,
+		"continue_passage": true
+		},
+	"response_required": false,
+	"text": "After your son went to bed, you explained to your wife that you have a performance review at work, and so you can't promise that you will make it to the showing.\n\nYou both went to bed dismayed.\n\nThe next morning you head out the door to work."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": -1
+		},
+		"progress": 0,
+		"visual": "res://Video/d1/door_open/door_open.ogv",
+		"promised": false,
+		"continue_passage": true
+		},
+	"response_required": false,
+	"text": "After your son went to bed, you explained to your wife that Dirk's arranged for you to do an interview of the Jane Levitt show after work, and so you can't promise that you will make it to the showing.\n\nYou both went to bed dismayed.\n\nThe next morning you head out the door to work."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"working_late": true,
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": -1
+		},
+		"progress": 0,
+		"visual": "res://Video/d1/door_open/door_open.ogv",
+		"promised": false,
+		"continue_passage": true
+		},
+	"response_required": false,
+	"text": "After your son went to bed, you explained to your wife that Dirk arranged for you to work late, and so you can't promise that you will make it to the showing.\n\nYou both went to bed dismayed.\n\nThe next morning you head out the door to work."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d3_arrive" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

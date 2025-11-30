@@ -1,0 +1,61 @@
+{
+"passage_name": "d3_zelphix_aggresive_response",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"zel_response_aggresive": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Of course we can't compete with this offer: Zelphix has the backing of the Chinese government! Probably...\n\nBut it'd be a different story if Uncle Sam reared his big, beautiful, bald eagle looking head towards this deal. You draft an aggresive lobbying strategy framed around securing American jobs and American companies against all others.\n\nWith the last red-blooded flick of your pen, Linda appears at your desk."
+	},
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 1,
+			"family": 0
+		},
+		"progress": 10,
+		"continue_passage": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "'You made short work with that one, I'll get this over to Dirk right away.'\n\nShe carries the Zelphix dosier and your draft towards Dirk's office.\n\nYou unlaod the next dosier onto your desk."
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d3_loophole" },
+	"environment": { "passage_name": "" },
+	"success": { "passage_name": "" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}
