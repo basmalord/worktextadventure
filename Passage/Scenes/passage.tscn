@@ -24,7 +24,6 @@ passage_json_files_folder = "res://JSON Files/"
 [node name="Frame" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
 texture = ExtResource("2_qapux")
-metadata/_edit_lock_ = true
 
 [node name="VisualsV" type="VideoStreamPlayer" parent="."]
 offset_right = 2560.0
@@ -43,7 +42,6 @@ script = ExtResource("4_q5d60")
 [node name="FramePicture" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
 texture = ExtResource("5_6u3mc")
-metadata/_edit_lock_ = true
 
 [node name="OutputControl" type="Control" parent="."]
 layout_mode = 3
@@ -69,7 +67,6 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus 
 
 Suspendisse luctus feugiat est non luctus. Morbi viverra hendrerit tincidunt. Nulla condimentum, velit condimentum gravida rutrum, leo mauris fermentum justo, id scelerisque neque ipsum sed risus. Nunc pellentesque diam laoreet, tincidunt neque et, aliquam massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tempor libero lectus, nec commodo nisl mattis id. Nulla facilisi. Aliquam scelerisque nunc at augue commodo porttitor. Phasellus neque erat, luctus sed nisl sit amet, egestas convallis ipsum. Praesent nec sodales enim, ut ultricies risus. Sed erat justo, finibus at diam et, lacinia iaculis neque. Morbi lectus lorem, ultrices eu volutpat non, ultrices vitae dui. Suspendisse luctus euismod elementum. Proin eget varius erat, vel tincidunt augue."
 scroll_active = false
-metadata/_edit_lock_ = true
 
 [node name="ReputationManager" type="Node" parent="."]
 script = ExtResource("5_vfmde")
