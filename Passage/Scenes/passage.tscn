@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://ot7pjbh1rhyw"]
+[gd_scene load_steps=10 format=3 uid="uid://c8etw3tx73rfi"]
 
 [ext_resource type="Script" uid="uid://dmkulon41l1ky" path="res://Passage/Scripts/passage.gd" id="1_y57or"]
 [ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="2_euac8"]
-[ext_resource type="VideoStream" uid="uid://o72mmjio63tn" path="res://Video/asciitest2.ogv" id="2_l4bus"]
 [ext_resource type="PackedScene" uid="uid://cdc48adan4r4r" path="res://WordGrid/word_grid.tscn" id="2_w2v17"]
 [ext_resource type="Script" uid="uid://bmrgcsgsan1jp" path="res://Passage/Scenes/visuals_i.gd" id="4_q5d60"]
 [ext_resource type="Script" uid="uid://b03qqm27ogvut" path="res://ManagerNodes/ReputationManager/reputation_manager.gd" id="5_vfmde"]
@@ -50,7 +49,6 @@ offset_top = 35.999992
 offset_right = 1308.0
 offset_bottom = 936.0
 scale = Vector2(0.44886738, 0.44886738)
-stream = ExtResource("2_l4bus")
 autoplay = true
 loop = true
 
