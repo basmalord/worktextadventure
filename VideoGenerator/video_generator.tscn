@@ -5,14 +5,9 @@
 [node name="ASCIIVideoGenerator" type="Node2D"]
 position = Vector2(478, -178)
 script = ExtResource("1_pxhot")
-new_video_frame_rate = 25
-frames_folder_path = "res://Video/driving/"
-frames_folder_absolute_path = "C:/Users/theob/Documents/worktextadventure/Video/driving/"
-visual_location = "C:/Users/theob/Documents/worktextadventure/Video/d1/driving3/driving3.ogv"
 max_character_width = 126
 blank_space_detailing = 4
 is_video = true
 font_path = "res://Fonts/ModernDOS8x8.ttf"
 custom_file_name = "driving"
-use_custom_output_location = true
-custom_output_location = "res://Video/driving/"
+custom_output_location = ""
