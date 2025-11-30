@@ -20,7 +20,6 @@ passage_json_files_folder = "res://JSON Files/"
 
 [node name="Frame" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
-metadata/_edit_lock_ = true
 
 [node name="VisualsV" type="VideoStreamPlayer" parent="."]
 offset_top = -2.0
@@ -39,7 +38,6 @@ script = ExtResource("4_q5d60")
 
 [node name="FramePicture" type="Sprite2D" parent="."]
 position = Vector2(1280, 720)
-metadata/_edit_lock_ = true
 
 [node name="OutputControl" type="Control" parent="."]
 layout_mode = 3
@@ -64,7 +62,6 @@ size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("2_euac8")
 theme_override_font_sizes/normal_font_size = 18
 text = "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum"
-metadata/_edit_lock_ = true
 
 [node name="ReputationManager" type="Node" parent="."]
 script = ExtResource("5_vfmde")
