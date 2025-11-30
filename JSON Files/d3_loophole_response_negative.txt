@@ -163,19 +163,19 @@
 		"visual": "template_visual"
 		},
 	"response_required": true,
-	"text": "The first poster depicts a cat hanging from a bar with a forest fire in the back ground. At the bottom of the image, text reads:\n\n'Hang in there!'"
+	"text": "Three of the finest environmentally-minded posters that NewVision's office staff can muster lie before you. Which poster do you choose?"
 	}
 	]
   },
   "inputs": {
-	"ethics": { "passage_name": "" },
-	"environment": { "passage_name": "" },
-	"success": { "passage_name": "" },
-	"relaxation": { "passage_name": "" },
-	"compassion": { "passage_name": "" },
-	"realism": { "passage_name": "" },
-	"dedication": { "passage_name": "" },
-	"enthusiasm": { "passage_name": "" },
-	"profit": { "passage_name": "" }
+	"ethics": { "passage_name": "d3_cat_poster" },
+	"environment": { "passage_name": "d3_cat_poster" },
+	"success": { "passage_name": "d3_uncle_sam_poster" },
+	"relaxation": { "passage_name": "d3_minimalist_poster" },
+	"compassion": { "passage_name": "d3_uncle_sam_poster" },
+	"realism": { "passage_name": "d3_cat_poster" },
+	"dedication": { "passage_name": "d3_cat_poster" },
+	"enthusiasm": { "passage_name": "d3_uncle_sam_poster" },
+	"profit": { "passage_name": "d3_minimalist_poster" }
   }
 }
