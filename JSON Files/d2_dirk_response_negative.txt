@@ -8,7 +8,7 @@
 			"manager": -100,
 			"family": -100
 		},
-		"progress": 60,
+		"progress": 0,
 		"continue": 0
 	  },
 	"changes": {
@@ -18,7 +18,7 @@
 		},
 		"progress": 0,
 		"jane_levitt": true,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": true,
 	"text": "'Oh I can't tell you how much I agree, guy! You're killing it out there! We've pushed through this project so quick in fact, I want you to go on the Jane Levitt show tomorrow night and talk up our green agenda!\n\nWaddya say, guy?'"
@@ -26,8 +26,8 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": -100,
-			"family": -100
+			"manager": 100,
+			"family": 100
 		},
 		"progress": 40,
 		"continue": 0
@@ -39,7 +39,7 @@
 		},
 		"progress": 0,
 		"working_late": true,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": true,
 	"text": "'So we're in agreement- progress on the San Toro site isn't moving quick enough and you're going to have to work late tomorrow night.\n\nThat all good with you?'"
@@ -47,8 +47,8 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": 1,
-			"family": -100
+			"manager": 100,
+			"family": 100
 		},
 		"progress": 0,
 		"continue": 0
@@ -60,7 +60,7 @@
 		},
 		"progress": 0,
 		"performance_review": true,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": true,
 	"text": "'Couldn't have said it better myself, you're slacking, and in need of a firecracker of a performance review to shake things up.\n\n So don't make plans for tomorrow night because it's going to have to be an overtime gig!\n\nAll good with you?'"
@@ -68,8 +68,8 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": -100,
-			"family": -100
+			"manager": 100,
+			"family": 100
 		},
 		"progress": 0,
 		"continue": 0
@@ -81,7 +81,7 @@
 		},
 		"progress": 0,
 		"fired": true,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": true,
 	"text": "'It's like you read my mind, guy. I agree wholeheartedly: this just isn't right for you. So get your shit, and your green thumbs, and get out of here will ya!?\n\n YOU'RE FIRED!'"

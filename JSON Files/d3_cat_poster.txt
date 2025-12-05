@@ -18,7 +18,7 @@
 		},
 		"progress": 0,
 		"cat_poster": true,
-		"visual": "template_visual"
+		"visual": "res://Images/generic/DocumentUnsignedASCII.png"
 		},
 	"response_required": false,
 	"text": "Whoever created this has a real artistic flair, they've evoked the immediacy of the climate crisis as aptly as anyone who loves this green Earth. How you'd love to meet the creator."

@@ -37,7 +37,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": false,
 	"text": "Dirk bends down below your desk to reveal a comically large stack of binders. From it he spills a mountain of documents onto your desk.\n\n'Good luck, buddy!'"

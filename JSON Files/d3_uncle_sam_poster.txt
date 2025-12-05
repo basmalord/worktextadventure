@@ -17,7 +17,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "template_visual"
+		"visual": "res://Images/generic/DocumentUnsignedASCII.png"
 		},
 	"response_required": false,
 	"text": "Bold.\n\nBeautiful.\n\nAmerican. This'll get the troops riled up for the environment!"

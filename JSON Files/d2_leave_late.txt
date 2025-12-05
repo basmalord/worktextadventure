@@ -17,7 +17,7 @@
 			"family": 1
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/breakfast.png"
+		"visual": "res://Video/d1/door_open/door_open.ogv"
 		},
 	"response_required": false,
 	"text": "You hold off on heading out, taking the time to prepare your wife and son breakfast. They thank you before you leave for work."
@@ -38,7 +38,7 @@
 		},
 		"progress": 0,
 		"stock_up": true,
-		"visual": "res://Video/d1/driving3/driving.ogv"
+		"visual": "res://Video/TestForDriving/driving_new_improved.ogv"
 		},
 	"response_required": false,
 	"text": "You listen to the business news on your drive to work:\n\n'NewVision stock is up 14% as insiders report rapid progress with their San Toro expansion.\n\nThis is in spite of growing public concern around the impact of new data centres on developing nation's water supply.'"
@@ -59,7 +59,7 @@
 		},
 		"progress": 0,
 		"stock_up": false,
-		"visual": "res://Video/d1/driving3/driving.ogv"
+		"visual": "res://Video/TestForDriving/driving_new_improved.ogv"
 		},
 	"response_required": false,
 	"text": "You listen to the business news on your drive to work:\n\n'NewVision stock is down 6% as insiders report that an expansion of environmental commitments has slowed progress on their San Toro expansion.\n\nIn a post on social media, environmental activist Teta Gunberg urged companies not to be dismayed at such developments, writing on Splitter:\n\n'A reduction in stock growth is a small price to pay for limiting environmental impact.'"
@@ -80,7 +80,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "After arriving at your desk, you're greeted by Linda.\n\n'Messy report this morning- you heard it, right? Anyway, Dirk said he'll talk to you later about it. He told me to tell you to check your emails, there's something about the water supply for the San Toro project that needs your sign off.'"
@@ -101,7 +101,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": false,
 	"text": "After arriving at your desk, you're greeted by Dirk.\n\n'You catch the business news this morning, guy? Heck of a performance out there! I think I'll be calling you captain sooner than I thought... Because you'll have bought yourself a boat. And you'd be the captain of the- nevermind.\n\nHey, check your emails- we need your sign off on the water infrastructure at San Toro.\n\nWith that he leaves."

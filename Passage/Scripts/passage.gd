@@ -12,20 +12,22 @@ var part_number: int
 var image_position
 @export var passage_json_file_location: String 
 @export var passage_json_files_folder: String 
-@onready var output_box: RichTextLabel = $OutputControl/OutputScroll/OutputBox
+@onready var output_box = $OutputControl.output_box
 #@onready var visuals: VideoStreamPlayer = $Visuals
 @onready var reputation_manager: ReputationManager = $ReputationManager
 @onready var progress_manager: ProjectProgressManager = $ProjectProgressManager
 @onready var time_manager = $TimeManager
 @onready var continue_button: Button = $ContinueButton
 @onready var word_grid = $WordGrid
-
+var points: int = 0
 
 func _ready():
 	image_position = $VisualsI.position
 	load_passage()
 
-
+func disable_word_grid_words():
+	if data["passage_name"] == "thank_you":
+		word_grid.get_child(0).set_word_usage_to_zero()
 
 func load_passage(): #This loads the json file associated with the passage we want to access.
 	if passage_json_file_location == null: #This checks if there is data harboured in the file location variable.
@@ -40,7 +42,9 @@ func load_passage(): #This loads the json file associated with the passage we wa
 			print("ERROR: PASSAGE TEXT DATA IS NOT JSON FORMATTED")
 			return
 		data = new_json.data
+		reset_continues()
 		continue_passage()
+		disable_word_grid_words()
 		valid_inputs = data["inputs"]
 		input_strings = valid_inputs.keys()
 
@@ -59,7 +63,11 @@ func continue_passage():
 		print("IT IS TRUE")
 		reset_continues()
 		if data["passage_name"] == "d3_pre_event":
-			print("FOUND PRE EVENT")
+			if state_conditions.keys().has("jane_levitt"):
+				_on_input_box_text_submitted("profit")
+			else:
+				_on_input_box_text_submitted("compassion")
+			return
 		_on_input_box_text_submitted("Ethics")
 	print(state_conditions)
 
@@ -71,8 +79,7 @@ func check_for_response_required(passage_data):
 	if data["passage_text"]["parts"][part_number]["response_required"] == true:
 		for child in word_grid.get_child(0).get_children():
 			if child is WordButton:
-				if child.usage != 0:
-					child.disabled = false
+				child.disabled = false
 		continue_button.hide()
 		reset_continues()
 	else:
@@ -88,6 +95,9 @@ func generate_state():
 	state["reputation"] = reputation_manager.reputation_type_dictionary
 	state["progress"] = progress_manager.progress
 	state["continue"] = amount_of_continue_presses
+	if points != 0:
+		state["points"] = points
+		print("THESE ARE POOINTS: ", points)
 	return state
 
 func get_available_parts(parts: Array, state: Dictionary):
@@ -102,6 +112,15 @@ func check_conditions(part: Dictionary, state: Dictionary): #takes a part of the
 		var cond_val = part["conditions"][key]
 		if typeof(cond_val) == TYPE_DICTIONARY:
 			for subkey in cond_val.keys():
+				if cond_val[subkey] == null:
+					continue
+				if not state.has(key) \
+				or not (state[key] is Dictionary) \
+				or not state[key].has(subkey):
+					print("THIS IS COND_VAL: ", cond_val, "this is state conditions: ", state_conditions)
+					if subkey == "picked_syber":
+						state_conditions["picked_syber"] = true
+						return true
 				if state[key][subkey] < cond_val[subkey]:
 					return false
 		elif key == "continue":

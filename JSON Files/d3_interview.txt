@@ -1,0 +1,244 @@
+{
+"passage_name": "d3_interview",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Video/d1/door_open/door_open.ogv"
+		},
+	"response_required": false,
+	"text": "You and Dirk fly through the NewVision office front door before piling into Dirk's company car.\n\n'Driver, to the Jane Levitt show!' Dirk barks before letting out an ungodly snort."
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Video/TestForDriving/driving_new_improved.ogv"
+		},
+	"response_required": false,
+	"text": "'How far is it to the studio? And how long do you think the interveiw will take?' You ask.\n\n'Buddy! Pal! There's no rush- drink it all in, it's not often a face like yours gets on prime time!\n\nOnly joking, kid: it's about a half an hour until we're there, and then the interveiw shouldn't be more than ten minutes.'\n\nYou nod sheepishly."
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"promised": true,
+		"continue": 2
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "As the pine trees pass by, you can't help but remember your promise to be there on your son's birthday."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 2
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "As the pine trees pass by, you can't help but feel nervous."
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 3
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "res://Images/d2/jane_levitt_show.png"
+		},
+	"response_required": false,
+	"text": "You climb out the car and are ushered into the studio. There you're greeted by Jane Levitt herself:\n\n'Dirk! Great to see you again!' A wide smile forms across her face.\n\n'Jane! How do you stay so young?' replies Dirk.\n\n'I could say the same of your friend here,' Jane tosses you a terse glance. Before you can introduce yourself, a shrill voice of an overworked cast director beckons:\n\n'We're on in 30 seconds people!'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 4
+	  },
+	  	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "The three of your rush to your seats as final adjustments to lighting are made and the room grows quiet. Before you sits Jane Levitt, as the cast director's forceful count down fades to silence."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 5
+	  },
+	  	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "'This is Jane Levitt and you're watching the Jane Levitt show. I'm here with Newvision CEO, Dirk Mills, and his trusty Director of Environmental and Sustainability Compliance.\n\nNow, straight to business: NewVision has seen a great deal of public scrutiny around the potential environmental impact of the San Toro data centre project. It's clear the public is screaming for accountability, is it not?'"
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"analysis_signed": true,
+		"continue": 6
+	  },
+	  	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"responded_well": true,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Your ears prick at the question, before Dirk even has a chance to respond you detail the analysis you signed off on mere days ago. You deftly avoid the nitty, gritty details of the analysis and bring home the headline:\n\n'There are a lot of ordinary folks out there who would disagree with you, Jane.'\n\nYou don't turn your head, but you can feel the warm glow of Dirk's approval. Jane seems impressed too."
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 6
+	  },
+	  	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"responded_well": false,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "'Well Jane,' Dirk exclaims, 'that's why we here at NewVision have hired people like my buddy here, we've heard the masses and he's making concrete steps to get the public behind us, and the environment.' Dirk turns to you with a bloated smile.\n\n'And what conrete steps are those, Director?' Jane asks.\n\nThere's very little, PR-wise, you've actually been involved in since you've arrived. Panicked, you blunder your way into a long droll about the office's poster competition.\n\nDirk and Jane seem highly unimpressed."
+	},
+		 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"responded_well": true,
+		"continue": 7
+	  },
+	  	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "'Wow, I must say you've got a real star on your hands here, Dirk- a superstar! Tell me, superstar, what is NewVision doing to combat the notriously dangerous water supply implications of data centres such as the one you're planning to build in San Toro?'"
+	},
+			 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"responded_well": false,
+		"continue": 7
+	  },
+	  	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "'Well, ok sport, we all love posters- incidentally you can get your 12 x 12 Jane Levitt original at BSBCB.com for $12.99- but is that really doing anything for the environment?\n\nLet's move on to the topic of water supply, and the dangerous implications data centres like the one you plan to build have on it. Can the people of San Toro trust their water's in safe hands once you get there?"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d3_interview_response_1" },
+	"environment": { "passage_name": "d3_interview_response_1" },
+	"success": { "passage_name": "d3_interview_response_1" },
+	"relaxation": { "passage_name": "d3_interview_response_1" },
+	"compassion": { "passage_name": "d3_interview_response_1" },
+	"realism": { "passage_name": "d3_interview_response_1" },
+	"dedication": { "passage_name": "d3_interview_response_1" },
+	"enthusiasm": { "passage_name": "d3_interview_response_1" },
+	"profit": { "passage_name": "d3_interview_response_1" }
+  }
+}

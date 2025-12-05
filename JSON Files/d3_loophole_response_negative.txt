@@ -5,11 +5,11 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": 0,
-			"picked_syber": true,
-			"family": 0
+			"manager": -100,
+			"family": -100
 		},
 		"progress": 0,
+		"picked_syber": true,
 		"continue": 0
 	  },
 	"changes": {
@@ -27,15 +27,15 @@
 	 {
 	  "conditions": {
 		"reputation": {
-			"manager": 0,
-			"family": 0
+			"manager": -100,
+			"family": -100
 		},
 		"progress": 0,
 		"continue": 0
 	  },
 	"changes": {
 		"reputation": {
-			"manager": 1,
+			"manager": 0,
 			"family": 0
 		},
 		"progress": 0,

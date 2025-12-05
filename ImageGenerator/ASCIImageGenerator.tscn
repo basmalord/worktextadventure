@@ -4,9 +4,8 @@
 
 [node name="ASCIImageGenerator" type="Node2D"]
 script = ExtResource("1_j12sc")
-visual_location = "res://Images/d1/t-rex.jpg"
-max_character_width = 126
-flip_char_list = true
-use_custom_file_name = true
-custom_file_name = "blah"
+visual_location = "res://Images/d2/thank_you_for_playing.png"
+blank_space_detailing = 4
+custom_file_name = "thank_you"
 use_custom_output_location = true
+custom_output_location = "res://Images/d2/"

@@ -23,7 +23,6 @@
 	"response_required": false,
 	"text": "Of course we can't compete with this offer: Zelphix has the backing of the Chinese government! Probably...\n\nBut it'd be a different story if Uncle Sam reared his big, beautiful, bald eagle looking head towards this deal. You draft an aggresive lobbying strategy framed around securing American jobs and American companies against all others.\n\nWith the last red-blooded flick of your pen, Linda appears at your desk."
 	},
-	},
 	 {
 	  "conditions": {
 		"reputation": {

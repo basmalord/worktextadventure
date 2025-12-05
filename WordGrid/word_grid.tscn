@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cpwy6y4vgws5u" path="res://WordGrid/word_button_grid.gd" id="1_0jfsl"]
 [ext_resource type="Script" uid="uid://c2r8r2o6iun2f" path="res://WordGrid/Word/word_button.gd" id="1_y8ttd"]
-[ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="3_oa5c6"]
+[ext_resource type="FontFile" uid="uid://dd1wfqwm0sal0" path="res://Fonts/ModernDOS8x16.ttf" id="3_oa5c6"]
 
 [node name="WordGrid" type="Control"]
 layout_mode = 3
@@ -12,8 +12,9 @@ offset_bottom = 40.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
+offset_top = 56.0
 offset_right = 40.0
-offset_bottom = 40.0
+offset_bottom = 160.0
 columns = 3
 script = ExtResource("1_0jfsl")
 
@@ -35,6 +36,18 @@ script = ExtResource("1_y8ttd")
 word = "Profit"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
+[node name="Control" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control2" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control3" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
 [node name="WordButton4" type="Button" parent="GridContainer"]
 layout_mode = 2
 script = ExtResource("1_y8ttd")
@@ -52,6 +65,18 @@ layout_mode = 2
 script = ExtResource("1_y8ttd")
 word = "Compassion"
 metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
+
+[node name="Control4" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control5" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+
+[node name="Control6" type="Control" parent="GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
 
 [node name="WordButton7" type="Button" parent="GridContainer"]
 layout_mode = 2
@@ -73,9 +98,9 @@ metadata/_custom_type_script = "uid://c2r8r2o6iun2f"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 59.0
+offset_left = 103.0
 offset_top = -23.0
-offset_right = 179.0
+offset_right = 343.0
 theme_override_fonts/font = ExtResource("3_oa5c6")
-theme_override_font_sizes/font_size = 16
-text = "Sentinment Grid"
+theme_override_font_sizes/font_size = 32
+text = "Sentiment Grid"

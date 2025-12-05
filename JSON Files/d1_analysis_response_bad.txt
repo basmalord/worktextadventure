@@ -17,7 +17,8 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/tick.png"
+		"analysis_signed": true,
+		"visual": "res://Images/generic/DocumentSignedASCII.png"
 		},
 	"response_required": false,
 	"text": "Sure the conclusion is technically false, and sure the positive framing is somewhat unwarranted given the data.\n\nBut the sooner the research is in the hands of marketing, the sooner the company can get to improving its records. You sign off on the document."
@@ -37,7 +38,7 @@
 			"family": 0
 		},
 		"progress": 20,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "Just as you finish signing off, Linda appears at your desk. She looks pleased.\n\n'Dirk will be so happy you signed off on this. It took a lot of hand-wringing to get the poindexters to write something that didn't make us look like complete chumps!'\n\nShe takes the analysis from your desk and heads off briskly towards Dirk's office."
@@ -57,7 +58,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/hammer_and_sickle.png"
+		"visual": "res://Images/d1/labourASCII.png"
 		},
 	"response_required": true,
 	"text": "You scan your desk for the next piece of paper work to review. It's the results of NewVision's negotiations with San Toro's Ministry of Labour:\n\nObligatory overtime at management discretion,\n\nWaiving of medical insurance rights,\n\nEight tenths of site and site infrastructure construction costs to be paid for by the State of San Toro,\n\nRenewable energy to make up 35% of the site's total demand,\n\nRenewable energy infrastructure to be supplied by US manufacturers, to the exclusion of all other nations.\n\nBelow the summary of outcomes is a signature box."

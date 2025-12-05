@@ -1,0 +1,59 @@
+{
+"passage_name": "d3_end_home",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "You turn Dirk down. Nothing's going to stop you from seeing Endsite with your boy."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "res://Video/d1/door_open/door_open.ogv"
+		},
+	"response_required": false,
+	"text": "You open your front door to your son. He's wearing his GormTrooper outfit, all ready to see the latest edition of Endsite. You're wife's stood behind him, smiling. You leave with them, to the movies.FIN"
+	}
+	]
+  }
+  "inputs": {
+	"ethics": { "passage_name": "thank_you" },
+	"environment": { "passage_name": "thank_you" },
+	"success": { "passage_name": "thank_you" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

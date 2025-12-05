@@ -3,11 +3,16 @@
 [ext_resource type="Script" uid="uid://cpw20cbt8fe7k" path="res://VideoGenerator/video_generator.gd" id="1_pxhot"]
 
 [node name="ASCIIVideoGenerator" type="Node2D"]
-position = Vector2(478, -178)
 script = ExtResource("1_pxhot")
+new_video_frame_rate = 12
+frames_folder_path = "res://Video/TestForDriving/"
+frames_folder_absolute_path = "C:/Users/theob/Documents/worktextadventure/Video/TestForDriving/"
+visual_location = "C:/Users/theob/Documents/worktextadventure/Video/TestForDriving/door_opening_new.ogv"
 max_character_width = 126
 blank_space_detailing = 4
 is_video = true
-font_path = "res://Fonts/ModernDOS8x8.ttf"
-custom_file_name = "driving"
-custom_output_location = ""
+flip_char_list = true
+use_custom_file_name = true
+custom_file_name = "door_open_new"
+use_custom_output_location = true
+custom_output_location = "res://Video/TestForDriving/"

@@ -18,7 +18,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Video/d1/driving3/driving.ogv"
+		"visual": "res://Video/TestForDriving/driving_new_improved.ogv"
 		},
 	"response_required": false,
 	"text": "On your way to work, you listen to the business news.\n\n'NewVision stock continues to rise amidst the final procceedings of their deal with the San Toro government to provide a new data centre by 2026.\n\nIn a brief last night, NewVision CEO, Dirk Mills, announced he'd be appearing on the Jane Levitt show tonight on BSBCB to discuss the benefits of environmentally-minded policy.\n\nHe'll be accompanied by NewVision's new Director of Environmental and Sustainability Compliance.'"
@@ -39,7 +39,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Video/d1/driving3/driving.ogv"
+		"visual": "res://Video/TestForDriving/driving_new_improved.ogv"
 		},
 	"response_required": false,
 	"text": "On your way to work, you listen to the business news.\n\n'There is continued pressure on NewVision CEO, Dirk Mills, as the market for NewVision stock remains anemic amidst set backs to their San Toro data centre project.\n\nIn an effort to speed up proceedings, delegates of San Toro are set to arrive in LA tonight for a round of negotiations.\n\nWith much of the blockage reportedly revolving around environmental concenrs, raised by NewVision's new Director of Environmental and Sustainability Compliance, a representative of San Toro's rural villages will be present.'"
@@ -60,7 +60,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Video/d1/driving3/driving.ogv"
+		"visual": "res://Video/TestForDriving/driving_new_improved.ogv"
 		},
 	"response_required": false,
 	"text": "On your way to work, you listen to the business news.\n\n'There is continued pressure on NewVision CEO, Dirk Mills, as the market for NewVision stock remains anemic amidst set backs to their San Toro data centre project.\n\nIn a press release this morning, Mills released a bullish press release:\n\n'NewVision will always strive to innovate and lead the field in ecological awareness. That is why, after only days since our last review, we are formally launching a new, and, by definition, innovative review into our environmental and sustainability commitments.'"
@@ -81,7 +81,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "On arriving at your desk, you're greeted by Linda.\n\n'Sorry to hear Dirk's got you working late tonight. It's just as well though, I'm not sure if you heard but they're stepping up negotiations for the San Toro centre. Some representatives are arriving for a meeting at the end of the day, Dirk says he wants you there.\n\nHe also told me to drop these by your desk.'\n\n"
@@ -102,7 +102,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "On arriving at your desk, you're greeted by Linda.\n\n'Hey superstar! Two days on the job and already going to be crossing swords with Jane Levitt? Dirk was right about you!.\n\nHe also told me to drop these by your desk.\n\nSee you later, superstar!'"
@@ -123,7 +123,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "On arriving at your desk, you're greeted by Linda.\n\n'Sorry to hear about the review. It's just as well though, I'm not sure the kind of guy that should be working at NewVision, no offence.\n\nAnyway, Dirk also told me to drop these by your desk.'\n\n"
@@ -143,7 +143,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "She spills three large dosiers onto your desk before leaving.\n\nThe first that takes your eyes is a report on Chinese company, Zelphix. You don't know how BizDev got their hands on all this material, but the report shows a highly detailed outline of an offer from Zelphix to the San Toro government to build the data centre in NewVision's stead.\n\n.Utilisation of non-invasive infrastructure, apparently reducing deforestation by 85% when compared to new vision's plans\n\nAnd a partnership with Bejing Tsinghua University to build a conservation research facility alongside the centre!? "
@@ -163,7 +163,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": true,
 	"text": "Quite the offer, one that certainly has the potential for derrailing NewVision's bid. The note on the back of the report requests that I draft a response strategy."
@@ -184,7 +184,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/bedside.png"
+		"visual": "res://Images/generic/MorningASCII.png"
 		},
 	"response_required": false,
 	"text": "You wake up, ready to head to work."
@@ -205,7 +205,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/bedside.png"
+		"visual": "res://Images/generic/MorningASCII.png"
 		},
 	"response_required": false,
 	"text": "With the promise to be there for your son on his birthday, you wake up early to take the day."

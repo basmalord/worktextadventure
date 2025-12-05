@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr6243pc8dd3q"]
+
+[ext_resource type="FontFile" uid="uid://dd1wfqwm0sal0" path="res://Fonts/ModernDOS8x16.ttf" id="1_efxyo"]
+[ext_resource type="Script" uid="uid://dmk130s8dxlrb" path="res://Passage/Scenes/backup_scroll.gd" id="1_s5iil"]
+
+[node name="OutputControl" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 1
+script = ExtResource("1_s5iil")
+
+[node name="OutputScroll" type="ScrollContainer" parent="."]
+layout_mode = 0
+offset_left = 1952.0
+offset_top = 252.0
+offset_right = 2528.0
+offset_bottom = 1019.0
+
+[node name="OutputBox" type="RichTextLabel" parent="OutputScroll"]
+clip_contents = false
+custom_minimum_size = Vector2(150, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("1_efxyo")
+theme_override_font_sizes/normal_font_size = 32
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque luctus vitae erat eu vehicula. Cras ut velit id purus placerat vehicula quis id ligula. Vestibulum interdum dapibus auctor. Nullam tellus urna, feugiat at magna at, egestas maximus massa. Vivamus mattis lacus vel metus gravida, hendrerit ultrices ex convallis. Aenean non fringilla orci. Cras semper commodo ipsum, ut pellentesque erat semper non. Quisque et massa et erat semper aliquam auctor non justo. Pellentesque vestibulum egestas turpis, eget feugiat tellus sodales in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent dictum dui non magna rhoncus, non sagittis tellus placerat. Cras vitae condimentum nunc, a efficitur elit. Proin vulputate, nisl at sollicitudin efficitur, metus erat ultrices odio, sit amet mattis lacus elit sit amet elit. Vestibulum auctor elementum consequat.
+
+Suspendisse luctus feugiat est non luctus. Morbi viverra hendrerit tincidunt. Nulla condimentum, velit condimentum gravida rutrum, leo mauris fermentum justo, id scelerisque neque ipsum sed risus. Nunc pellentesque diam laoreet, tincidunt neque et, aliquam massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tempor libero lectus, nec commodo nisl mattis id. Nulla facilisi. Aliquam scelerisque nunc at augue commodo porttitor. Phasellus neque erat, luctus sed nisl sit amet, egestas convallis ipsum. Praesent nec sodales enim, ut ultricies risus. Sed erat justo, finibus at diam et, lacinia iaculis neque. Morbi lectus lorem, ultrices eu volutpat non, ultrices vitae dui. Suspendisse luctus euismod elementum. Proin eget varius erat, vel tincidunt augue."
+metadata/_edit_lock_ = true

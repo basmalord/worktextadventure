@@ -1,12 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkun3ln7gloup"]
 
 [ext_resource type="Script" uid="uid://c2r8r2o6iun2f" path="res://WordGrid/Word/word_button.gd" id="1_fpgs5"]
-[ext_resource type="FontFile" uid="uid://8se0uft3sdkm" path="res://Fonts/ModernDOS8x8.ttf" id="1_gef2a"]
+[ext_resource type="FontFile" uid="uid://dd1wfqwm0sal0" path="res://Fonts/ModernDOS8x16.ttf" id="1_gef2a"]
 
 [node name="WordButton" type="Button"]
 offset_right = 8.0
 offset_bottom = 8.0
 theme_override_fonts/font = ExtResource("1_gef2a")
+theme_override_font_sizes/font_size = 32
 action_mode = 0
 alignment = 0
 autowrap_mode = 2

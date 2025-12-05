@@ -17,7 +17,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/bedside.png"
+		"visual": "res://Images/generic/MorningASCII.png"
 		},
 	"response_required": false,
 	"text": "You wake up next to your sleeping wife. It's 7:00am. The letter you received from your new company sits on your dresser."
@@ -37,7 +37,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/bedside.png"
+		"visual": "res://Images/generic/DocumentUnsignedASCII.png"
 		},
 	"response_required": true,
 	"text": "It reads:\n\n'Welcome to NewVision! What you need to know about your new position in our family:\n\nDirector Of Environment and Sustainability Compliance for our prospective San Toro Data Centre. Enivronmental concern is at the heart of what we do here, and we hope you can help build that sentiment. Welcome to NewVision!'\n\nYour wife notices you reading:\n\n'It's too early for all this honey, go back to sleep.'\n\nChoose your response from the options to the right."

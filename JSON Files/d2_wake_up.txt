@@ -19,7 +19,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/bedside.png"
+		"visual": "res://Images/generic/MorningASCII.png"
 		},
 	"response_required": true,
 	"text": "You wake up, tired and hungover. Your wife is still asleep, you can't remember if you spoke to her before falling asleep last night. \n\nYou wonder whether you should do something to make it up to her."
@@ -39,7 +39,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/bedside.png"
+		"visual": "res://Images/generic/MorningASCII.png"
 		},
 	"response_required": true,
 	"text": "You wake up, refreshed and happy. Your son and wife lie beside you- he didn't want to go to sleep alone, so instead you all continued the dinosaur documentary in bed together. \n\nYou wash and get dressed. Just as you're about to head out the door, your son turns to you:\n\n'Have a great day, dad!'"

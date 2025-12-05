@@ -17,7 +17,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Video/d1/door_open/door_open.ogv"
+		"visual": ""
 		},
 	"response_required": false,
 	"text": "This new job is extremely important to you. You rush through the morning, barely taking the time to say goodbye to your wife and son."
@@ -37,7 +37,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Video/d1/driving3/driving.ogv"
+		"visual": "res://Video/TestForDriving/driving_new_improved.ogv"
 		},
 	"response_required": false,
 	"text": "You listen to the business news as you drive to work:\n\n'NewVision announces new environmental commitments in response to increasing protests!'\n\nYou can't help but feel a sense of pride; this is what you came to NewVision for."
@@ -57,7 +57,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "You make it to work. A tired-looking woman meets you at the front and leads you to your new desk.\n'I'm Linda, Dirk's assistant. I might say you're quite lucky he recommended you for the job, but I don't want to give you false hope. He won't say it, but he'll appreciate that you're early.'"
@@ -77,7 +77,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": true,
 	"text": "You definitely feel lucky; it's not often that a somebody fresh out of grad school makes it straight to management of NewVision.\n\nYou hear the familiar stomp of Dirk's great hooves. Before you know it, he's standing, tall as ever, over your desk.\n\n'How's it going, guy? Bet you're stoked to start- just think, six years ago we were rooming like nerds at El Paso State. Now I own a boat! Who knows, six more years, maybe seven, and you might have one of your own too! Now, buddy, let me ask you: are you psyched about NewVision's pioneering new data centre project, or are you psyched?'"

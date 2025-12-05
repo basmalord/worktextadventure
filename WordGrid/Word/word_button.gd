@@ -12,12 +12,12 @@ class_name WordButton
 "Environment",
 "Ethics",
 "Relaxation") var word: String = "Default"
-@export var usage: int = 10
+@export var usage: int = 12
 
 func _ready():
 	self.pressed.connect(_on_pressed)
 	set_word(word)
-	var font_to_use = load("res://Fonts/ModernDOS8x8.ttf")
+	var font_to_use = load("res://Fonts/ModernDOS8x16.ttf")
 	add_theme_font_override("font", font_to_use)
 
 func set_word(word_to_set: String):
@@ -31,6 +31,9 @@ func _on_pressed() -> void:
 		print("ERROR: NO PASSAGE NODE IN SCENE")
 		return
 	var passage = get_tree().get_first_node_in_group("Passage")
+	if usage == 0:
+		passage.output_box.text = passage.output_box.text + " You've forgotten all notion of " + word + "."
+		return
 	passage._on_input_box_text_submitted(word)
 	get_parent().set_word_usage(self)
 

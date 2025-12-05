@@ -1,0 +1,59 @@
+{
+"passage_name": "d3_end_drink",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "You and Dirk spend the next few hours at the bar, laughing and joking like old studnets at El Paso State.\n\nBy the time you're too drunk to drive, the bar is closed and you head home."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"continue_passage": true,
+		"visual": "res://Images/generic/DocumentUnsignedASCII.png"
+		},
+	"response_required": false,
+	"text": "You open your fornt door to a cold, dark, empty house. Not a sound. There is a note on the kitchen table, however.\n\n'We've gone to stay at my parent's, you really let him down. Enjoy work tomorrow.FIN"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "thank_you" },
+	"environment": { "passage_name": "thank_you" },
+	"success": { "passage_name": "thank_you" },
+	"relaxation": { "passage_name": "" },
+	"compassion": { "passage_name": "" },
+	"realism": { "passage_name": "" },
+	"dedication": { "passage_name": "" },
+	"enthusiasm": { "passage_name": "" },
+	"profit": { "passage_name": "" }
+  }
+}

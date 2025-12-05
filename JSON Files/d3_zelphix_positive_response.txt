@@ -23,7 +23,6 @@
 	"response_required": false,
 	"text": "If they can do it, so can we! NewVision has the means to match anything Zelphix can offer, even if it does cost a bit more. And forget Bejing Tsinghau: Stanford and Berkeley would jump at the chance to sponsor a research centre, we just need to get the ball rolling...\n\nWith the last enthusiastic flick of your pen, Linda appears at your desk."
 	},
-	},
 	 {
 	  "conditions": {
 		"reputation": {

@@ -17,7 +17,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "template_visual"
+		"visual": "res://Images/generic/DocumentUnsignedASCII.png"
 		},
 	"response_required": false,
 	"text": "An excellent piece of branded, no frills design. The minmalist poster will act as a clear indicator to all NewVision staff.\n\nOur vision.\n\nIs a NewVision.\n\nFor Mother Earth."

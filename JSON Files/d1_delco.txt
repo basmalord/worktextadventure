@@ -17,7 +17,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": true,
 	"text": "DELCO, the Rolls Royce of cheap, questionably tasting office snacks. You could ask for more, but not at this price!\n\nYou sign right on the dotted line.\n\nWith your work finished for the day, it's time to head home.\n\nJust as you're about to leave, Dirk appears, arms stretched wide across your desk,\n\n'Good work today, bud. How's about a drink with your new boss, celebrate the new day- you know, Guy?'"

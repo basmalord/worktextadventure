@@ -1,0 +1,122 @@
+{
+"passage_name": "d3_interview_response_1",
+"passage_text": {
+	"parts":[
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"water_esign": true,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "A defensive brovado overcomes you as you remember the deal you signed off on not two days ago. You even catch yourself beginning to sound like Dirk:\n\n'Look, Jane, once the little guys in places like San Toro see some of the money we're investing in the place, they'll have more than enough to buy all the water they need...'"
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"water_esign": false,
+		"continue": 0
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "You're well aware of the impact of data centres on local water supply, you denied NewVision's own plans in-part on the basis of that very factor.\n\nWith a clean conscience, you outline how you're being at NewVision is already leading the company to more ethical, thoughtful, and environmentally friendly San Toro bid."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"water_esign": false,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Jane seems impressed.\n\n'Well, what a remarkable talent you've got on your hands, Dirk,' she says.\n\n'Only the best at NewVision!' Dirk excclaims, letting out a bullish snort.\n\nJane turns to the camera to sign off:\n\n'And with that snort, that's all we've got time for tonight on the Jane Levitt show.'\n\nYou and Dirk make your way back to the car."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"water_esign": true,
+		"continue": 1
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": false,
+	"text": "Jane seems unimpressed. 'Quite the attitude you have for one so green, Director. You're not yet quite in the position of your senior Dirk here.'\n\n'Actually I'm a year younger-' Dirk interjects.\n\n'Whatever the case,' Jane continues, 'I think my audience will see right through you Director, you can't get around the facts: these data centres are causing untold harm to the water supply!'\n\nBefore you have a chance to respond, Jane's already turned to the camera to sign off:\n\n'And with that snort, that's all we've got time for tonight on the Jane Levitt show.'\n\nYou and Dirk make your way back to the car."
+	},
+	 {
+	  "conditions": {
+		"reputation": {
+			"manager": -100,
+			"family": -100
+		},
+		"progress": 0,
+		"continue": 2
+	  },
+	"changes": {
+		"reputation": {
+			"manager": 0,
+			"family": 0
+		},
+		"progress": 0,
+		"visual": "template_visual"
+		},
+	"response_required": true,
+	"text": "On your way back, Dirk spots a bar by the side of the road. It looks gloomy, seedy, and sad: just his kind of place.\n\n'Waddya say, buddy- a drink for old times sake?'"
+	}
+	]
+  },
+  "inputs": {
+	"ethics": { "passage_name": "d3_end_home" },
+	"environment": { "passage_name": "d3_end_home" },
+	"success": { "passage_name": "d3_end_drink" },
+	"relaxation": { "passage_name": "d3_end_drink" },
+	"compassion": { "passage_name": "d3_end_home" },
+	"realism": { "passage_name": "d3_end_home" },
+	"dedication": { "passage_name": "d3_end_home" },
+	"enthusiasm": { "passage_name": "d3_end_drink" },
+	"profit": { "passage_name": "d3_end_drink" }
+  }
+}

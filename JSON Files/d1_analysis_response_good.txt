@@ -17,10 +17,10 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/big_x.png"
+		"visual": "res://Images/generic/DocumentDeniedASCII.png"
 		},
 	"response_required": false,
-	"text": "You can't in good conscience sign off on research with a flase representation of the data. Sure, their framing still doesn't paint NewVision in the best light, but the data shows a much darker public perception than the conclusion suggests.\n\nYou take a red marker from your desk and mark the sign off box with a large red 'X'."
+	"text": "You can't in good conscience sign off on research with a false representation of the data. Sure, their framing still doesn't paint NewVision in the best light, but the data shows a much darker public perception than the conclusion suggests.\n\nYou take a red marker from your desk and mark the sign off box with a large red 'X'."
 	},
 	 {
 	  "conditions": {
@@ -37,7 +37,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_assistant.png"
+		"visual": "res://Images/generic/AssistantASCII.png"
 		},
 	"response_required": false,
 	"text": "Just as you finish marking the research, Linda appears at your desk. She looks upset.\n\n'So I'll have to send this back to R&D I suppose? Dirk won't be happy about this...'\n\nShe takes the analysis from your desk and heads off briskly towards Dirk's office."
@@ -57,7 +57,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/hammer_and_sickle.png"
+		"visual": "res://Images/d1/labourASCII.png"
 		},
 	"response_required": true,
 	"text": "You scan your desk for the next piece of paper work to review. It's the results of NewVision's negotiations with San Toro's Ministry of Labour:\n\nObligatory overtime at management discretion,\n\nWaiving of medical insurance rights,\n\nEight tenths of site and site infrastructure construction costs to be paid for by the State of San Toro,\n\nRenewable energy to make up 35% of the site's total demand,\n\nRenewable energy infrastructure to be supplied by US manufacturers, to the exclusion of all other nations.\n\nBelow the summary of outcomes is a signature box."

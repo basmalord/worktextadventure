@@ -18,7 +18,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_desk.png"
+		"visual": "res://Images/generic/ProjectManagerASCII.png"
 		},
 	"response_required": false,
 	"text": "As quickly as Linda enters the office, she leaves. You swear you could see a tear in her eye before she heads off down the hall.\n\nSoon after Dirk steps out, striding forcefully towards your desk.\n\n'Great slection on the office posters, buddy! They might not be good for anything else, but the NewVision guys sure know how to waste company time- kidding! Your face!\n\nBut seriously, I've had to let Linda go. That FTC response you drafted didn't see my desk before it went out, now we've got to do damage control. Don't worry I've noted your involvement too, maybe you're still quite a ways from getting that boat after all!'"
@@ -116,10 +116,10 @@
 	"environment": { "passage_name": "" },
 	"success": { "passage_name": "" },
 	"relaxation": { "passage_name": "" },
-	"compassion": { "passage_name": "" },
+	"compassion": { "passage_name": "d3_performance_review" },
 	"realism": { "passage_name": "" },
 	"dedication": { "passage_name": "" },
 	"enthusiasm": { "passage_name": "" },
-	"profit": { "passage_name": "" }
+	"profit": { "passage_name": "d3_interview" }
   }
 }

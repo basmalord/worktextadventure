@@ -16,6 +16,7 @@ class_name ASCIImageGenerator
 @export var custom_file_name: String
 @export var use_custom_output_location: bool = false
 @export var custom_output_location: String = "res://Images/"
+@export var reverse_ratio: bool = false
 
 var visual_resource
 var visual_node
@@ -80,6 +81,10 @@ func image_to_ascii(path: String, op_folder: String = custom_output_location, ch
 		print("ERROR WHEN TRYING TO LOAD IMAGE FOR ASCII GENEN")
 		return ""
 	var image_ratio: float = float(img.get_height())/img.get_width() #separated the image and character ratio to fix image output
+	print("ratio norm: ", image_ratio)
+	if reverse_ratio:
+		image_ratio = float(img.get_width())/img.get_height()
+		print("ratio rev: ", image_ratio)
 	var character_width = get_character_w_and_h(font_path, 16)[0]
 	var character_height = get_character_w_and_h(font_path, 16)[1]
 	var character_ratio = character_width / character_height

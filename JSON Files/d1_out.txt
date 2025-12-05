@@ -17,7 +17,7 @@
 			"family": 0
 		},
 		"progress": 0,
-		"visual": "res://Images/d1/dirk_desk.png",
+		"visual": "res://Images/generic/ProjectManagerASCII.png",
 		"went_out": true
 		},
 	"response_required": true,
